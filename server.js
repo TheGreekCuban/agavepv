@@ -8,7 +8,6 @@ const routes = require('./routes');
 
 //Define Global Variables
 const app = express();
-const log = consol.log;
 const PORT = process.env.PORT || 8080
 
 //Step 1
@@ -30,5 +29,5 @@ if(process.env.NODE_ENV === 'production') {
 app.use(routes);
 
 app.listen(PORT, () => {
-    log(`Server is listening at http://localhost: ${PORT}`)
+    console.log(`Server is listening at http://localhost: ${PORT}`)
 })
