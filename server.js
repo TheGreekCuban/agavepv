@@ -15,23 +15,19 @@ const PORT = process.env.PORT || 8080
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/agavepv', {
     useNewURLParser: true
 })
-
+ 
 //Step 2 - Configuration
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/', routes);
 
 //Step 3 - Check If Application Is In Production
 if(process.env.NODE_ENV === 'production') {
     //Need to run npm build in client to get build folder.
     //We need to bring the react application into our server via the build folder.
     app.use(express.static('client/build'));
-    
-    //Set index.html inside build folder 
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'client/build/index.html'))
-    })   
 }
+
+app.use(routes);
 
 app.listen(PORT, () => {
     log(`Server is listening at http://localhost: ${PORT}`)
