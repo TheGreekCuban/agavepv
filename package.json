@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Corporate Website Of Agave Property Ventures",
   "main": "server.js",
-    "dependencies": {
+  "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.7.13"
   },
@@ -16,13 +16,12 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build"
-  } ,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheGreekCuban/agavepv.git"
   },
   "keywords": [],
-
   "author": "",
   "license": "ISC",
   "bugs": {
