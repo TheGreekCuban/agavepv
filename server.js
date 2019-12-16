@@ -1,32 +1,24 @@
-//Importing Modules
-const mongoose = require('mongoose');
-const express = require('express');
+const express = require("express");
 
-//Importing routes
-const routes = require('./routes');
-
-//Define Global Variables
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3001;
 
-//Step 1 - Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/agavepv" , { 
-    useNewUrlParser: true,
-    useUnifiedTopology: true 
-});
- 
-//Step 2 - Configuration
-app.use(express.json());
+// Define middleware here
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-//Step 3 - Check If Application Is In Production
-if(process.env.NODE_ENV === 'production') {
-    //Need to run npm build in client to get build folder.
-    //We need to bring the react application into our server via the build folder.
-    app.use(express.static('client/public'));
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 }
-
+// Add routes, both API and view
 app.use(routes);
+
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/agavepv");
+
 
 app.listen(PORT, () => {
     console.log(`Server is listening at http://localhost:${PORT}`)
