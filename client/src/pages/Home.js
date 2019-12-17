@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import { Col, Row, Container } from "../components/Grid";
+
+
 
 class Home extends Component {
   state = {
@@ -9,22 +9,15 @@ class Home extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>What Home Should I Read?</h1>
-            </Jumbotron>
-          </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Home On My List</h1>
-            </Jumbotron>
-          </Col>
-        </Row>
-      </Container>
+        <h4>
+          Agave Property Ventures is a real estate development and property management firm located in Newark, NJ.
+          <br />
+          <br />
+          Our mission is to create value for our stakeholders while simultaneously improving the local community.
+        </h4>
     );
   }
 }
 
 export default Home;
+
