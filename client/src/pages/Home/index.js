@@ -9,12 +9,14 @@ class Home extends Component {
 
   render() {
     return (
+      <main>
         <h4>
           Agave Property Ventures is a real estate development and property management firm located in Newark, NJ.
           <br />
           <br />
           Our mission is to create value for our stakeholders while simultaneously improving the local community.
         </h4>
+      </main>
     );
   }
 }

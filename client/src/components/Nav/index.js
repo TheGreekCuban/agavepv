@@ -13,7 +13,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div>
+      <header>
         <nav>
         <div className="nav-wrapper">
           <a href="/" className="brand-logo"><img className="responsive-img" id="logo" src={Logo} alt="logo"/></a>
@@ -34,7 +34,7 @@ class Nav extends Component {
         <li><a href="/criteria">Acquisition Criteria</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul> 
-    </div>
+    </header>
     );
   }
 }
