@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="wrapper">
+      <div>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />

@@ -1,3 +1,29 @@
 nav {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(215, 215, 215);
+    width: 100%;
+    padding: 0 5% 0 0;
 }
+
+#logo {
+    transform: translateY(-30%);
+    max-height: 250px;
+}
+
+#nav-mobile {
+    transform: translateY(35%);
+    color: #608832;
+}
+
+@media only screen and (min-width: 768px) {
+
+    nav {
+        height: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 767px) {
+
+    nav {
+        height: 75px;
+    }
+  }
