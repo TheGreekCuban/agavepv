@@ -1,12 +1,14 @@
 #smIcon {
     max-width: 2em;
+    color: forestgreen;
     margin: 1em;
 }
 
 .page-footer {
     background-color:rgb(215, 215, 215);
-    border-top: 2px solid rgb(197, 196, 196);
+    border-top: 3px solid rgb(199, 198, 198);
     padding: 0;
+    color: forestgreen;
 }
 
 .copyright {
