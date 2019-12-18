@@ -1,7 +1,10 @@
 nav {
     background-color: rgb(215, 215, 215);
-    width: 100%;
     padding: 0 5% 0 0;
+}
+
+.nav-wrapper {
+    grid-area: nav;
 }
 
 #logo {

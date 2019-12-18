@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import "./style.css";
+import IG from "../../images/insta.png"
+import FB from "../../images/facebook.png"
+import LI from "../../images/linkedin.png"
+import TWTTR from "../../images/twitter.png"
 
 class Footer extends Component {
 
@@ -14,30 +18,13 @@ class Footer extends Component {
   render() {
     return (
         <footer className="page-footer">
-            <div className="container">
-                <div className="row">
-                    <div className="col l6 s12">
-                        <h5 className="white-text">Footer Content</h5>
-                        <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
-                        </p>
+                    <div className="right-align icons">
+                        <a className="grey-text text-lighten-3" href="https://twitter.com/AgavePV"><img id="smIcon" alt="Twitter" src={TWTTR}/></a>
+                        <a className="grey-text text-lighten-3" href="https://www.instagram.com/agavepv/" target=" "><img id="smIcon" alt="Instagram" src={IG}/></a>
+                        <a className="grey-text text-lighten-3" href="https://www.facebook.com/pg/AgavePV/about/"><img id="smIcon" alt="Facebook" src={FB}/></a>
+                        <a className="grey-text text-lighten-3" href="https://www.linkedin.com/company/agavepv/"><img id="smIcon" alt="LinkedIn" src={LI}/></a>    
                     </div>
-                    <div className="col l4 offset-l2 s12">
-                        <h5 className="white-text">Links</h5>
-                        <ul>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="footer-copyright">
-                <div className="container">
-                    © 2014 Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
+                    <div className="center-align copyright">© 2020 Copyright Agave Property Ventures</div>
         </footer>
 
     )
