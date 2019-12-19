@@ -4,6 +4,10 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
+import About from "./pages/About"
+import News from "./pages/News"
+import Criteria from "./pages/Criteria"
+import Contact from "./pages/Contact"
 import "./App.css";
 
 function App() {
@@ -13,6 +17,10 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/news" component={News} />
+          <Route exact path="/criteria" component={Criteria} />
+          <Route exact path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
         <Footer />
