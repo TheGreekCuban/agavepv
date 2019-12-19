@@ -20,7 +20,7 @@ class Nav extends Component {
           <a href="#!" data-target="mobile-demo" className="sidenav-trigger"><i id="hamburger" className="material-icons"><strong>menu</strong></i></a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><a id="navL" href="/about">About</a></li>
-            <li><a id="navL" href="/contact">News</a></li>
+            <li><a id="navL" href="/news">News</a></li>
             <li><a id="navL" href="/criteria">Acquisition Criteria</a></li>
             <li><a id="navL" href="/contact">Contact</a></li>
           </ul>
