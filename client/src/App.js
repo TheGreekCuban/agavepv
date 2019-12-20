@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/index.js";
 import NoMatch from "./pages/NoMatch/index.js";
 import Nav from "./components/Nav";
@@ -12,6 +12,7 @@ import "./App.css";
 
 function App() {
   return (
+      <Router>
       <>
         <Nav />
         <Switch>
@@ -24,6 +25,7 @@ function App() {
         </Switch>
         <Footer />
       </>
+    </Router>
   );
 }
 
