@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import NoMatch from "./pages/NoMatch";
+import Home from "./pages/Home/index.js";
+import NoMatch from "./pages/NoMatch/index.js";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
-import About from "./pages/About"
-import News from "./pages/News"
-import Criteria  from "./pages/Criteria"
-import Contact from "./pages/Contact"
+import About from "./pages/About/index.js"
+import News from "./pages/News/index.js"
+import Criteria from "./pages/Criteria/index.js"
+import Contact from "./pages/Contact/index.js"
 import "./App.css";
 
 function App() {
@@ -16,18 +16,18 @@ function App() {
       <>
         <Nav />
         <Switch>
-          <Route exact path="/" render={props => (<Home/>)}/>
-          <Route exact path="/about" render={props => (<About/>)}/>
-          <Route exact path="/news" render={props => (<News/>)} />
-          <Route exact path="/criteria" render={props => (<Criteria/>)} />
-          <Route exact path="/contact" render={props => (<Contact/>)}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/news" component={News} />
+          <Route exact path="/criteria" component={Criteria} />
+          <Route exact path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
         <Footer />
       </>
     </Router>
   );
-};
+}
 
 export default App;
 
