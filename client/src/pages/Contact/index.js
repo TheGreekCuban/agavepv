@@ -14,13 +14,13 @@ class Contact extends Component {
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
       const { name, value } = event.target;
+      console.log(event.target.name)
       this.setState({
         [name]: value
       });
     };
   
-    // When the form is submitted, use the API.saveBook method to save the book data
-    // Then reload books from the database
+    // When the form is submitted, use the API.saveLead method to save the lead data
     handleFormSubmit = event => {
       event.preventDefault();
       if (this.state.title && this.state.author) {
@@ -59,7 +59,7 @@ class Contact extends Component {
               disabled={!(this.state.author && this.state.title)}
               onClick={this.handleFormSubmit}
             >
-              Submit Book
+              Submit
             </FormBtn>
           </form>
 

@@ -3,7 +3,6 @@ const leadController = require("../../controllers/leadController");
 
 // Matches with "/api/leads"
 router.route("/")
-  .get(leadController.findAll)
   .post(leadController.create);
 
 // Matches with "/api/leads/:id"
