@@ -15,6 +15,7 @@ class Contact extends Component {
     handleInputChange = event => {
       const { name, value } = event.target;
       console.log(event.target.name)
+      console.log(this.state)
       this.setState({
         [name]: value
       });
@@ -23,13 +24,14 @@ class Contact extends Component {
     // When the form is submitted, use the API.saveLead method to save the lead data
     handleFormSubmit = event => {
       event.preventDefault();
-      if (this.state.title && this.state.author) {
+      if (this.state.name && this.state.email) {
         API.saveLead({
           name: this.state.name,
           email: this.state.email,
           message: this.state.message
         })
-          .catch(err => console.log(err));
+        .then(res => this.setState({ name: "", email: "", message: ""}))
+        .catch(err => console.log("error happening here"));
       }
     };
 
@@ -38,25 +40,25 @@ class Contact extends Component {
       <main>
           <form>
             <Input
-              value={this.state.title}
+              value={this.state.name}
               onChange={this.handleInputChange}
-              name="title"
-              placeholder="Title (required)"
+              name="name"
+              placeholder="Name (required)"
             />
             <Input
-              value={this.state.author}
+              value={this.state.email}
               onChange={this.handleInputChange}
-              name="author"
-              placeholder="Author (required)"
+              name="email"
+              placeholder="Email (required)"
             />
             <TextArea
-              value={this.state.synopsis}
+              value={this.state.message}
               onChange={this.handleInputChange}
-              name="synopsis"
-              placeholder="Synopsis (Optional)"
+              name="message"
+              placeholder="Message (Optional)"
             />
             <FormBtn
-              disabled={!(this.state.author && this.state.title)}
+              disabled={!(this.state.name && this.state.email)}
               onClick={this.handleFormSubmit}
             >
               Submit

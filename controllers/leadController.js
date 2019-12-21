@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the leadController
 module.exports = {
   create: function(req, res) {
+    console.log("we've made it to the backend")
     db.Lead
       .create(req.body)
       .then(dbModel => res.json(dbModel))
