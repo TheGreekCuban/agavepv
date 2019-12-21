@@ -12,4 +12,4 @@ router.route("/")
 //   .put(leadController.update)
 //   .delete(leadController.remove);
 
-// module.exports = router;
+module.exports = router;
