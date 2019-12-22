@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Alexandre Goulet
+N:Goulet;Alexandre;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:AG@Agavepv.com
+item1.TEL:(212) 920-7658
+item1.X-ABLabel:
+item2.ORG:Agave Property Ventures
+item2.X-ABLabel:
+item3.TITLE:Co-Founder
+item3.X-ABLabel:
+PHOTO:https://lh6.googleusercontent.com/-elvZjkjvlbo/Xf_OTIRqEsI/AAAAAAAAAA
+ A/CsvlL8OmwuA8otk6b8znpdGNbeHSYh2EwCOQCEAE/photo.jpg
+END:VCARD

@@ -8,12 +8,6 @@ p {
     grid-row-start: 4;
 }
 
-#contact {
-    grid-area: contact;
-    display: flex;
-    flex-direction: row;
-}
-
-form {
-    padding: 2em;
+#portfolio {
+    grid-area: portfolio;
 }

@@ -2,21 +2,21 @@ import React, { Component } from "react";
 import "./style.css";
 
 
-class Criteria extends Component {
+class Portfolio extends Component {
   state = {
-    Criteria: []
+    Portfolio: []
   };
 
   render() {
     return (
-      <main id="criteria" className="section scrollspy">
+      <main id="portfolio" className="section scrollspy">
         <div className="description">
-        <h1>Acquisition Criteria</h1>
+        <h1>Portfolio</h1>
         </div>
       </main>
     );
   }
 }
 
-export default Criteria;
+export default Portfolio;
 

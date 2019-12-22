@@ -17,10 +17,12 @@ body {
     display: grid;
     grid-template:  "nav nav nav nav"
                     "about about about about"
-                    "criteria criteria criteria criteria"
+                    "criteria criteria portfolio portfolio"
+                    "criteria criteria portfolio portfolio"
                     "contact contact contact contact"
                     "news news news news"
                     "footer footer footer footer";
+    grid-auto-flow: row;
 }
 
 footer {
@@ -30,4 +32,19 @@ footer {
 
 header {
     grid-area: nav;
+}
+
+
+@media screen and (max-width: 780px) {
+  #root {
+
+    grid-template:  "nav nav nav nav"
+                    "about about about about"
+                    "criteria criteria criteria criteria "
+                    "portfolio portfolio portfolio portfolio"
+                    "contact contact contact contact"
+                    "news news news news"
+                    "footer footer footer footer";
+    grid-auto-flow: row;
+}
 }

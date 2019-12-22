@@ -26,6 +26,7 @@ class Nav extends Component {
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><a id="navL" href="#about">About</a></li>
             <li><a id="navL" href="#criteria">Acquisition Criteria</a></li>
+            <li><a id="navL" href="#portfolio">Portfolio</a></li>
             <li><a id="navL" href="#contact">Contact</a></li>            
             <li><a id="navL" href="#news">News</a></li>
           </ul>
@@ -35,8 +36,9 @@ class Nav extends Component {
       <ul className="sidenav" id="mobile-demo">
         <li><a href="#about">About</a></li>
         <li><a href="#criteria">Acquisition Criteria</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>    
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact">News</a></li>
+        <li><a href="#news">News</a></li>
       </ul> 
     </header>
     );
