@@ -7,3 +7,7 @@ p {
     margin: 0 2.5% 0 2.5%;
     grid-row-start: 4;
 }
+
+#contact {
+    grid-area: contact;
+}

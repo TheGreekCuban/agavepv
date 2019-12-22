@@ -37,7 +37,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <main>
+      <main id="contact" className="section scrollspy">
           <form>
             <Input
               value={this.state.name}

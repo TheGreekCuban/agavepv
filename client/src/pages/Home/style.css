@@ -1,9 +1,0 @@
-p {
-    font-style: italic;
-    font-size: 1.25em;
-}
-
-.description {
-    margin: 0 2.5% 0 2.5%;
-    grid-row-start: 4;
-}

@@ -1,7 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home/index.js";
-import NoMatch from "./pages/NoMatch/index.js";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import About from "./pages/About/index.js"
@@ -12,20 +9,14 @@ import "./App.css";
 
 function App() {
   return (
-      <Router>
-      <>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/news" component={News} />
-          <Route exact path="/criteria" component={Criteria} />
-          <Route exact path="/contact" component={Contact} />
-          <Route component={NoMatch} />
-        </Switch>
-        <Footer />
-      </>
-    </Router>
+    <>
+      <Nav />
+      <About />
+      <Criteria />
+      <Contact /> 
+      <News />
+      <Footer />
+    </>
   );
 }
 
