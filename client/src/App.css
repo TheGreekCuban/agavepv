@@ -1,13 +1,13 @@
 html,
 body {
-  height: 100vh;
-  width: 100vw;
-  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Cormorant Garamond', serif;
   color: forestgreen;
   font-size: 18px;
@@ -19,6 +19,7 @@ body {
 
 #root {
     min-height: 100%;
+    overflow-x: hidden;
     display: grid;
     grid-template:  "nav nav nav nav"
                     "about about about about"
@@ -37,6 +38,7 @@ footer {
 
 header {
     grid-area: nav;
+    width: 100%;
 }
 
 #pageImages {

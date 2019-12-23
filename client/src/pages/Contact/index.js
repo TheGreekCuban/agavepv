@@ -38,7 +38,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div id="contact" className="section scrollspy container"> 
+      <main id="contact" className="section scrollspy container"> 
         <div className="title"></div><h1>Contact Us</h1>
         <div className="divider"></div>
         <div className="row">
@@ -76,7 +76,7 @@ class Contact extends Component {
           </form>
         </div>
         <VCards />
-      </div>
+      </main>
     );
   }
 }

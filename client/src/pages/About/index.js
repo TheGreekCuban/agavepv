@@ -15,7 +15,7 @@ class About extends Component {
   }
   render() {
     return (
-        <div className="container section scrollspy" id="about">
+        <main className="container section scrollspy" id="about">
           <h1>Agave Property Ventures</h1>
           <div className="divider"></div>
           <div className="responsive-img hide-on-small-only"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/></div>
@@ -45,7 +45,7 @@ class About extends Component {
               In 2016, Alexander was named as one of New York City’s Dealmakers of the year by The New York Times. Since then, Alexander has seen great success with both Landlord and Tenant representation along major fashion corridors in New York City. A few transactions of note include Space NYC Gallery at 428 Broome Street, Zimmerman at 900 Madison Avenue and Unilever’s St. Ives Pop-up at 168 Fifth Avenue.
             </p>
           </div>   
-        </div>
+        </main>
     );
   }
 }
