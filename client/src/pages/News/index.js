@@ -9,9 +9,9 @@ class News extends Component {
 
   render() {
     return (
-      <main id="news" className="section scrollspy container">
+      <div id="news" className="section scrollspy container">
         <h1>More About Newark, NJ</h1>
-      </main>
+      </div>
     );
   }
 }

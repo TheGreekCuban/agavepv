@@ -9,7 +9,7 @@ class Criteria extends Component {
 
   render() {
     return (
-      <main id="criteria" className="section scrollspy">
+      <div id="criteria" className="section scrollspy">
         <h1>Acquisition Criteria</h1>
         <div id="acquisition">
         <p>
@@ -25,7 +25,7 @@ class Criteria extends Component {
           Rehab, Value Add & Core Opportunities
         </p>
         </div>
-      </main>
+      </div>
     );
   }
 }

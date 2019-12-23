@@ -39,7 +39,7 @@ class Nav extends Component {
         <li><a href="#criteria">Acquisition Criteria</a></li>
         <li><a href="#portfolio">Portfolio</a></li>    
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#vCards">V-Cards</a></li>
+        <li><a href="#vCs">V-Cards</a></li>
       </ul> 
     </header>
     );

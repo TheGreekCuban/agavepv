@@ -15,8 +15,7 @@ class About extends Component {
   }
   render() {
     return (
-      <main id="about" className="section scrollspy">
-        <div className="container">
+        <div className="container section scrollspy" id="about">
           <h1>Agave Property Ventures</h1>
           <div className="divider"></div>
           <div className="responsive-img hide-on-small-only"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/></div>
@@ -47,7 +46,6 @@ class About extends Component {
             </p>
           </div>   
         </div>
-      </main>
     );
   }
 }

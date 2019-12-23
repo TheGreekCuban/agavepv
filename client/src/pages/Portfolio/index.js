@@ -10,7 +10,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <main id="portfolio" className="section scrollspy">
+      <div id="portfolio" className="section scrollspy">
         <h1>Portfolio</h1>
         <img id="fourtyTwoThird" src={fourtyTwoThird} alt="42 Third Street, Newark, NJ"/>
         <div id="propertyDescription"> 
@@ -24,7 +24,7 @@ class Portfolio extends Component {
           2 Units
         </p>
         </div>
-      </main>
+      </div>
     );
   }
 }
