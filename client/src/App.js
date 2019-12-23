@@ -7,7 +7,6 @@ import Criteria from "./pages/Criteria/index.js"
 import Contact from "./pages/Contact/index.js"
 import "./App.css";
 import Portfolio from "./pages/Portfolio/index.js";
-import { AlexV, AlexG } from "./components/ContactCard"
 
 function App() {
   return (
@@ -17,8 +16,6 @@ function App() {
       <Criteria />
       <Portfolio />
       <Contact />
-      <AlexG />
-      <AlexV /> 
       <Footer />
     </>
   );

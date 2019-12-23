@@ -5,3 +5,11 @@
 form {
     padding: 2em;
 }
+
+.card {
+    margin: 0 2.5% 2.5% 2.5%;
+}
+
+title {
+    margin: 0;
+}

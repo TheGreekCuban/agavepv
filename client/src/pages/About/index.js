@@ -19,21 +19,24 @@ class About extends Component {
         <div className="container">
           <h1>Agave Property Ventures</h1>
           <div className="divider"></div>
-          <div className="responsive-img"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/>
+          <div className="responsive-img hide-on-small-only"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/></div>
+          <div id="intro">
             <p>
-              We are a real estate development and property management firm located in Newark, NJ. Our mission is to create value for our stakeholders while simultaneously improving the local community.
+              Agave Property Ventures is a real estate development and property management firm located in Newark, NJ. Our mission is to create value for our stakeholders while simultaneously improving the local community.
             </p>
           </div>
-          <div className="aboutUs" id="goulet">
-            <img src={goulet} alt="Alexandre Goultet"/>
-            <p>Alexandre Goulet, Founder</p> 
+          <h1 id="team" className="section scrollspy">The Team</h1>
+          <div className="divider"></div>
+          <div className="aboutUs">
+            <img id="pageImages" src={goulet} alt="Alexandre Goultet"/>
+            <p className="center">Alexandre Goulet, Founder</p> 
             <p>  
               Alexandre has been working as a real estate broker in New York City since January 2016. Since then, he has completed over $35,000,000 in transactions. In addition, he has been exposed to various aspects of property management through the creation of Whale Management LLC, a fully integrated Investment and Management firm with holdings in Queens, NY . Alexandre graduated from Bishop’s University, in Canada,  with a major in Finance.
             </p>
           </div>
-          <div className="aboutUs" id="vellios">
-          <img src={vellios} alt="Alexander Vellios"/>
-            <p>Alexander Vellios, Founder</p> 
+          <div className="aboutUs" >
+          <img id="pageImages" src={vellios} alt="Alexander Vellios"/>
+            <p className="center">Alexander Vellios, Founder</p> 
             <p>
               Alexander was born and raised in New York, giving him an in depth understanding of city's myriad sub-markets in addition to the surrounding markets. He attended The University of Delaware's Alfred Lerner College of Business and Economics where he graduated with a BS in Hotel, Restaurant and Institutional Management. 
             </p>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Email, TextArea, FormBtn, Phone, Name } from "../../components/ContactForm";
+import { VCards } from "../../components/ContactCard/index.js";
 import "./style.css";
 
 
@@ -74,6 +75,7 @@ class Contact extends Component {
             </FormBtn>
           </form>
         </div>
+        <VCards />
       </main>
     );
   }

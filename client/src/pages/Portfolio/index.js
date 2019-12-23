@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import fourtyTwoThird from "../../images/42third.png"
 
 
 class Portfolio extends Component {
@@ -11,7 +12,18 @@ class Portfolio extends Component {
     return (
       <main id="portfolio" className="section scrollspy">
         <h1>Portfolio</h1>
-        <div></div>
+        <img id="fourtyTwoThird" src={fourtyTwoThird} alt="42 Third Street, Newark, NJ"/>
+        <div id="propertyDescription"> 
+        <p>
+          42 3rd Street, Newark, NJ 07107
+        </p>
+        <p>
+           8% Capitalization Rate
+        </p>
+        <p>
+          2 Units
+        </p>
+        </div>
       </main>
     );
   }

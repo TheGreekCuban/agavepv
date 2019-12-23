@@ -21,7 +21,7 @@ body {
                     "criteria criteria portfolio portfolio"
                     "criteria criteria portfolio portfolio"
                     "contact contact contact contact"
-                    "alexV alexV alexG alexG"
+                    "vCards vCards vCards vCards"
                     "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
 }
@@ -35,10 +35,23 @@ header {
     grid-area: nav;
 }
 
+#pageImages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media screen and (max-width: 1030px) and (min-width: 320px) { 
 
   #root {
    display: initial;
+   height: 100vh;
+   width: 100vw;
+   font-size: 18px;
   }
+
+  h1 { 
+    font-size: 1.5em;
+  }
+
 }

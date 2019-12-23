@@ -1,28 +1,16 @@
-#alexG {
-    grid-area: alexG;
-}
-
-#alexV {
-    grid-area: alexV;
-}
-
-
-#alexV,
+/* #alexV,
 #alexG {
     width: 350px;
     height: 200px;
     text-align: center;
-}
+    grid-area: vCards;
+} */
 
 
 #cardContainer {
     margin-bottom: 10%;
     justify-items: center;
-}
-.personalContactInfo,
-p {
-    font-size: 1em;
-    font-style: normal;
+    grid-area: vCards;
 }
 
 h3 {

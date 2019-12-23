@@ -1,14 +1,15 @@
-p {
-    font-style: italic;
-    font-size: 1.25em;
-}
-
-
 #portfolio {
     grid-area: portfolio;
     text-align: center;
+    line-height: .5em;
 }
 
 h1 {
     text-align: center;
+}
+
+#fourtyTwoThird {
+    max-width: 200px;
+    max-height: 200px;
+    border: solid black 2px;
 }
