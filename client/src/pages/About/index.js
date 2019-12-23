@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import goulet from "../../images/alexandre.jpeg"
 import vellios from "../../images/alex.jpg"
+import nwrk from "../../images/newark.jpg"
 import "./style.css";
 
 
@@ -16,11 +17,13 @@ class About extends Component {
     return (
       <main id="about" className="section scrollspy">
         <div className="container">
-          <h1>About Agave Property Ventures</h1>
+          <h1>Agave Property Ventures</h1>
           <div className="divider"></div>
+          <div className="responsive-img"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/>
             <p>
               We are a real estate development and property management firm located in Newark, NJ. Our mission is to create value for our stakeholders while simultaneously improving the local community.
             </p>
+          </div>
           <div className="aboutUs" id="goulet">
             <img src={goulet} alt="Alexandre Goultet"/>
             <p>Alexandre Goulet, Founder</p> 

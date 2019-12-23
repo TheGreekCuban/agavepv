@@ -22,7 +22,6 @@ body {
                     "contact contact contact contact"
                     "alexV alexV alexG alexG"
                     "footer footer footer footer";
-    grid-auto-flow: row;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -36,16 +35,9 @@ header {
 }
 
 
-@media screen and (max-width: 780px) {
-  #root {
+@media screen and (max-width: 1030px) and (min-width: 320px) { 
 
-    grid-template:  "nav nav nav nav"
-                    "about about about about"
-                    "criteria criteria criteria criteria "
-                    "portfolio portfolio portfolio portfolio"
-                    "contact contact contact contact"
-                    "alexV alexV alexV alexV"
-                    "alexG alexG 'alexG alexG"
-                    "footer footer footer footer";
-}
+  #root {
+   display: initial;
+  }
 }

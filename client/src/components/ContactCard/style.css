@@ -17,7 +17,7 @@
 
 #cardContainer {
     margin-bottom: 10%;
-    align-content: center;
+    justify-items: center;
 }
 .personalContactInfo,
 p {

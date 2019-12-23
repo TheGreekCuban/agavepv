@@ -1,8 +1,14 @@
-p {
-    font-style: italic;
-    font-size: 1.25em;
-}
-
 #about {
     grid-area: about;
+
+}
+
+#skyline {
+    width: 75%;
+    padding: 2%;
+    margin: 0 12.5% 0 12.5%;
+}
+
+p {
+    font-size: 20em;
 }

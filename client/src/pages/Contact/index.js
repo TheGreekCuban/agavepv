@@ -38,9 +38,10 @@ class Contact extends Component {
   render() {
     return (
       <main id="contact" className="section scrollspy container"> 
-        <div className="col l12 title"></div><h1>Contact Us</h1>
+        <div className="title"></div><h1>Contact Us</h1>
         <div className="divider"></div>
-          <form>
+        <div className="row">
+          <form className="col s12">
             <Name
               value={this.state.name}
               onChange={this.handleInputChange}
@@ -72,6 +73,7 @@ class Contact extends Component {
               Submit
             </FormBtn>
           </form>
+        </div>
       </main>
     );
   }

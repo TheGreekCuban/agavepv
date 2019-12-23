@@ -2,11 +2,11 @@ import React from "react";
 
 export function Email(props) {
   return (
-    <div class="email">
-      <div {...props} class="input-field">
-        <i class="material-icons prefix">email</i>
-        <input id="email" type="email" class="validate" />
-        <label for="email">Email</label>
+    <div className="email">
+      <div {...props} className="input-field">
+        <i className="material-icons prefix">email</i>
+        <input id="email" type="email" className="validate" />
+        <label htmlFor="email">Email</label>
       </div>
     </div>
   );
