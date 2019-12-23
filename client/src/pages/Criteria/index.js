@@ -22,7 +22,7 @@ class Criteria extends Component {
            Price: $350,000 to $1,500,000
         </p>
         <p>
-          Deal Type: Rehab,  Value Add & Core Opportunities
+          Rehab, Value Add & Core Opportunities
         </p>
         </div>
       </main>

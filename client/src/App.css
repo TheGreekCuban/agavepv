@@ -13,6 +13,10 @@ body {
   font-size: 18px;
 }
 
+.divider {
+  margin: 1.5% 0;
+}
+
 #root {
     min-height: 100%;
     display: grid;
@@ -51,7 +55,8 @@ header {
   }
 
   h1 { 
-    font-size: 1.5em;
+    font-size: 1.80em;
+    margin: 1.5% 0;
   }
 
 }

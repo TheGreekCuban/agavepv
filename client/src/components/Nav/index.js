@@ -24,7 +24,6 @@ class Nav extends Component {
           <a href="/" className="brand-logo"><img className="responsive-img" id="logo" src={Logo} alt="logo"/></a>
           <a href="#!" data-target="mobile-demo" className="sidenav-trigger"><i id="hamburger" className="material-icons"><strong>menu</strong></i></a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><a id="navL" href="#about">About</a></li>
             <li><a id="navL" href="#team">Team</a></li>
             <li><a id="navL" href="#criteria">Acquisition Criteria</a></li>
             <li><a id="navL" href="#portfolio">Portfolio</a></li>
@@ -39,6 +38,7 @@ class Nav extends Component {
         <li><a href="#criteria">Acquisition Criteria</a></li>
         <li><a href="#portfolio">Portfolio</a></li>    
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#vCards">V-Cards</a></li>
       </ul> 
     </header>
     );

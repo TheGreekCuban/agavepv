@@ -1,6 +1,7 @@
 
 #criteria {
     grid-area: criteria;
+    line-height: .5em;
 }
 
 #acquisition {

@@ -26,7 +26,6 @@ class About extends Component {
             </p>
           </div>
           <h1 id="team" className="section scrollspy">The Team</h1>
-          <div className="divider"></div>
           <div className="aboutUs">
             <img id="pageImages" src={goulet} alt="Alexandre Goultet"/>
             <p className="center">Alexandre Goulet, Founder</p> 

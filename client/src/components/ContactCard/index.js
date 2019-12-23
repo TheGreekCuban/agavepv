@@ -3,9 +3,9 @@ import "./style.css";
 
 export function VCards(props) {
   return (
-      <div className="row center-align">
-      <h2>Download Our V-Cards!</h2>
-      <div className="card col l5" id="alexG">
+      <div id="vCards" className="row section scrollspy center-align">
+      <div id="vCardTitle">Download Our V-Cards!</div>
+      <div className="card col s12 l6" id="alexG">
         <div className="card-content">
           <a id="actionButton" href="#!" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
           <div className="personalContactInfo">
@@ -16,7 +16,7 @@ export function VCards(props) {
           </div>
         </div>
       </div>
-      <div className="card col l5" id="alexV">
+      <div className="card col s12 l6" id="alexV">
         <div className="card-content">
           <a id="actionButton" href="#!" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
           <div className="personalContactInfo">

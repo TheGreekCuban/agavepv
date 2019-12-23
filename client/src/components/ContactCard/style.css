@@ -1,10 +1,14 @@
-/* #alexV,
+#alexV,
 #alexG {
     width: 350px;
     height: 200px;
     text-align: center;
     grid-area: vCards;
-} */
+} 
+
+#alexV {
+    margin-right: 0;
+}
 
 
 #cardContainer {
@@ -15,4 +19,16 @@
 
 h3 {
     font-size: 1.5em;
+}
+
+#vCardTitle {
+    font-size: 2.0em;
+    margin-bottom: 2.5%;
+}
+
+@media screen and (max-width: 1030px) and (min-width: 320px) {
+    #vCardTitle {
+        font-size: 1.5em;
+        margin-bottom: 2.5%;
+    }
 }
