@@ -12,3 +12,10 @@
 h1 {
     text-align: center;
 }
+
+@media screen and (max-width: 1030px) and (min-width: 320px) {
+    #acquisition {
+        font-size: 1em;
+    }
+}
+

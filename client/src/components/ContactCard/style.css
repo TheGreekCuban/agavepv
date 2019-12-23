@@ -10,13 +10,8 @@
     align-self: end;
 }
 
-.card {
-    margin: 0;
-}
-
 #cardContainer {
     margin-bottom: 10%;
-    justify-items: center;
     grid-area: vCards;
 }
 
@@ -33,5 +28,9 @@ h3 {
     #vCardTitle {
         font-size: 1.5em;
         margin-bottom: 2.5%;
+    }
+
+    div#alexG.card {
+        margin: 0 0 5px 0;
     }
 }
