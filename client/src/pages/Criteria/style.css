@@ -1,13 +1,13 @@
-p {
-    font-style: italic;
-    font-size: 1.25em;
-}
-
-.description {
-    margin: 0 2.5% 0 2.5%;
-    grid-row-start: 4;
-}
 
 #criteria {
     grid-area: criteria;
+}
+
+#acquisition {
+    font-size: 1em;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
 }

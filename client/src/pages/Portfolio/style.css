@@ -3,11 +3,12 @@ p {
     font-size: 1.25em;
 }
 
-.description {
-    margin: 0 2.5% 0 2.5%;
-    grid-row-start: 4;
-}
 
 #portfolio {
     grid-area: portfolio;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
 }

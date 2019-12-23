@@ -1,0 +1,30 @@
+#alexG {
+    grid-area: alexG;
+}
+
+#alexV {
+    grid-area: alexV;
+}
+
+
+#alexV,
+#alexG {
+    width: 350px;
+    height: 200px;
+    text-align: center;
+}
+
+
+#cardContainer {
+    margin-bottom: 10%;
+    align-content: center;
+}
+.personalContactInfo,
+p {
+    font-size: 1em;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.5em;
+}

@@ -20,9 +20,10 @@ body {
                     "criteria criteria portfolio portfolio"
                     "criteria criteria portfolio portfolio"
                     "contact contact contact contact"
-                    "news news news news"
+                    "alexV alexV alexG alexG"
                     "footer footer footer footer";
     grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer {
@@ -43,8 +44,8 @@ header {
                     "criteria criteria criteria criteria "
                     "portfolio portfolio portfolio portfolio"
                     "contact contact contact contact"
-                    "news news news news"
+                    "alexV alexV alexV alexV"
+                    "alexG alexG 'alexG alexG"
                     "footer footer footer footer";
-    grid-auto-flow: row;
 }
 }

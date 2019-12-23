@@ -10,9 +10,8 @@ class Portfolio extends Component {
   render() {
     return (
       <main id="portfolio" className="section scrollspy">
-        <div className="description">
         <h1>Portfolio</h1>
-        </div>
+        <div></div>
       </main>
     );
   }

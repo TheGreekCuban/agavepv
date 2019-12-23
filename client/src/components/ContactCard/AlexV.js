@@ -1,18 +1,20 @@
 import React from "react";
-import alexV from "../../images/alex.jpg"
+import "./style.css";
 
 export function AlexV(props) {
   return (
-    <div className="col s12 m6 l3">
+    <main id="cardContainer" className="container" >
       <div className="card" id="alexV">
-        <div className="card-image">
-          <img id="cImg" src={alexV} />
-          <a className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
-        </div>
         <div className="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          <a href="#!" id="actionButton" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
+          <div className="personalContactInfo">
+            <h3>Alexander Vellios</h3>
+            <div class="divider"></div>
+            <p><a href="mailto:av@agavepv.com?subject=We are in nterested In Working Together!">AV@AGAVEPV.COM</a></p>
+            <p><a href="tel:914-584-8351">914-584-8351</a></p>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

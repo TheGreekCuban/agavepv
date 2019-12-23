@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Email, TextArea, FormBtn, Phone, Name } from "../../components/ContactForm";
-import { AlexV, AlexG } from "../../components/ContactCard"
 import "./style.css";
 
 
@@ -38,9 +37,10 @@ class Contact extends Component {
 
   render() {
     return (
-      <main id="contact" className="row section scrollspy"> 
-        <div className="col l12 title"><h1>Contact Us</h1>
-          <form className='col l4'>
+      <main id="contact" className="section scrollspy container"> 
+        <div className="col l12 title"></div><h1>Contact Us</h1>
+        <div className="divider"></div>
+          <form>
             <Name
               value={this.state.name}
               onChange={this.handleInputChange}
@@ -72,9 +72,6 @@ class Contact extends Component {
               Submit
             </FormBtn>
           </form>
-          <AlexG />
-          <AlexV />
-        </div>
       </main>
     );
   }
