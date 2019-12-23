@@ -21,7 +21,7 @@ class Footer extends Component {
                     <div className="right-align icons">
                         <a className="grey-text text-lighten-3" href="https://twitter.com/AgavePV"><img id="smIcon" alt="Twitter" src={TWTTR}/></a>
                         <a className="grey-text text-lighten-3" href="https://www.instagram.com/agavepv/" target=" "><img id="smIcon" alt="Instagram" src={IG}/></a>
-                        <a className="grey-text text-lighten-3" href="https://www.facebook.com/pg/AgavePV/about/"><img id="smIcon" alt="Facebook" src={FB}/></a>
+                        <a className="grey-text text-lighten-3" href="https://www.facebook.com/pg/agavepv/"><img id="smIcon" alt="Facebook" src={FB}/></a>
                         <a className="grey-text text-lighten-3" href="https://www.linkedin.com/company/agavepv/"><img id="smIcon" alt="LinkedIn" src={LI}/></a>    
                     </div>
                     <div className="center-align copyright">© 2020 Copyright Agave Property Ventures</div>

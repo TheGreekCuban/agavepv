@@ -27,7 +27,7 @@ body {
                     "criteria criteria portfolio portfolio"
                     "contact contact contact contact"
                     "vCards vCards vCards vCards"
-                    "footer footer footer footer";
+                    "footer footer footer footer"; 
     grid-template-columns: repeat(4, 1fr);
 }
 
