@@ -1,0 +1,28 @@
+
+function piResponse() {
+		piSetCookie('visitor_id323011', '179698113', 3650);
+			piSetCookie('visitor_id323011-hash', '5d241e72329156a7ea9e94f549c56ad82d772683c545bdaed5f73a991ea6a7f4d6a684e1e0012a3b8ddaa1a65469efc71027618e', 3650);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && false)) {
+		var analytics_link = document.location.protocol + "//" + "www.go.builtin.com/analytics?";
+		pi.tracker.visitor_id='179698113';
+
+				pi.tracker.visitor_id_sign='5d241e72329156a7ea9e94f549c56ad82d772683c545bdaed5f73a991ea6a7f4d6a684e1e0012a3b8ddaa1a65469efc71027618e';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + encodeURIComponent(pi.tracker[property]);
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+
