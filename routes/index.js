@@ -6,8 +6,8 @@ const contactRoutes = require("./contact");
 router.use("/contact", contactRoutes);
 
 //Cert Route
-router.get("/.well-known/acme-challenge/uVl6ax2J0FfvbJf5sdgq1DYZ4nDy-2QzqVzAR2dhrh4", (request, response) => { 
-  response.send("uVl6ax2J0FfvbJf5sdgq1DYZ4nDy-2QzqVzAR2dhrh4.afJbyYS_pgF6jTylFrprrYVKIwNMppgpjVIax50nZZM") 
+router.get("/.well-known/acme-challenge/aC06-CSzO3s4ANyxx5ARsIXo7LOFoAyvwCl_lMHXI_I", function(request, response){ 
+  response.send("aC06-CSzO3s4ANyxx5ARsIXo7LOFoAyvwCl_lMHXI_I.afJbyYS_pgF6jTylFrprrYVKIwNMppgpjVIax50nZZM") 
 });
 
 // If no API routes are hit, send the React app
