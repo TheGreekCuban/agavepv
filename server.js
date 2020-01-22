@@ -20,12 +20,6 @@ app.use(sslRedirect(['production'], 301))
 // Add routes, both API and view
 app.use(routes);
 
-//Cert Route
-app.get('/.well-known/acme-challenge/:id', function(req, res, next) {
-  res.send(req.params.id+'.'+'afJbyYS_pgF6jTylFrprrYVKIwNMppgpjVIax50nZZM');
-});
-
-
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/agavepv");
 
