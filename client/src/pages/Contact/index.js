@@ -7,7 +7,8 @@ import "./style.css";
 
 class Contact extends Component {
   state = {
-    name: "",
+    fullName: "",
+    phone: "",
     email: "",
     message: "",
   };
@@ -15,8 +16,8 @@ class Contact extends Component {
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
       const { name, value } = event.target;
-      console.log(event.target.name)
-      console.log(this.state)
+      console.log("Current phone: ", this.state)
+      console.log("Current email: ", this.state.email)
       this.setState({
         [name]: value
       });
@@ -25,13 +26,14 @@ class Contact extends Component {
     // When the form is submitted, use the API.saveLead method to save the lead data
     handleFormSubmit = event => {
       event.preventDefault();
-      if (this.state.name && this.state.email) {
+      if (this.state.fullName && this.state.email) {
         API.saveLead({
-          name: this.state.name,
+          name: this.state.fullName,
+          phone: this.state.phone,
           email: this.state.email,
           message: this.state.message
         })
-        .then(res => this.setState({ name: "", email: "", message: ""}))
+        .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("error happening here"));
       }
     };
@@ -44,31 +46,27 @@ class Contact extends Component {
         <div className="row">
           <form className="col s12">
             <Name
-              value={this.state.name}
+              value={this.state.fullName}
               onChange={this.handleInputChange}
-              name="name"
-              placeholder="Name"
+              name="fullName"
             />
             <Phone
-              value={this.state.email}
+              value={this.state.phone}
               onChange={this.handleInputChange}
               name="phone"
-              placeholder="Phone Number"
             />
             <Email
-              value={this.state.message}
+              value={this.state.email}
               onChange={this.handleInputChange}
               name="email"
-              placeholder="Email"
             />
             <TextArea
               value={this.state.message}
               onChange={this.handleInputChange}
               name="message"
-              placeholder="Message (Optional)"
             />
             <FormBtn
-              disabled={!(this.state.name && this.state.email)}
+              disabled={!(this.state.fullName && this.state.email)}
               onClick={this.handleFormSubmit}
             >
               Submit

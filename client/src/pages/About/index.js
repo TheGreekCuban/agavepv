@@ -39,7 +39,7 @@ class About extends Component {
               Alexander was born and raised in New York, giving him an in depth understanding of city's myriad sub-markets in addition to the surrounding markets. He attended The University of Delaware's Alfred Lerner College of Business and Economics where he graduated with a BS in Hotel, Restaurant and Institutional Management. Later in 2019 Alexander graduated from a 24 week Web Development Program at Columbia University's Fu Foundation School of Engineering and Applied Science. 
             </p>
             <p>
-              Recently, Alexander began a second role at APV as the Lead Web Developer. He has since built the company's corporate website and is continously maintaining and improving the MERN stack application. In addition, as a Strategy and Business Development partner at AGAVE Property Ventures, Alexander focuses on identifying new and exciting acquisition opportunities with a focus in Newark, NJ.  
+              Recently, Alexander began a second role at APV as a Web Developer. He has since built the company's corporate website and is continously maintaining and improving the MERN stack application. In addition, as a Strategy and Business Development partner at AGAVE Property Ventures, Alexander focuses on identifying new and exciting acquisition opportunities with a focus in Newark, NJ.  
             </p>
             <p>  
               Before Agave Property Ventures, Alexander was an Associate Director with the Abrams Retail Strategies Team, Compass’ premier retail leasing group where he successfully leased and subleased over 10,000 square feet of New York City Proper prime retail space in just under two years.
