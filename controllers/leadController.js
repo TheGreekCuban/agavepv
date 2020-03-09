@@ -10,7 +10,7 @@ module.exports = {
   },
   send: function(req, res) {
     db.Send(req.body)
-    .then(dbModel => res.status(200))
+    .then(dbModel => res.status(200).json('Status OK!', dbModel))
     .catch(err => res.status(422).json(err));
   }
 };
