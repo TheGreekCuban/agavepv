@@ -5,14 +5,14 @@ module.exports = {
   create: function(req, res) {
     db.Lead
       .create(req.body)
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => db.Send(dbModel))
       .catch(err => res.status(422).json(err));
-  },
-  send: function(req) {
-    db.Send(req.body)
-    .then(dbModel => res.json(dbModel))
-    .catch(err => res.status(422).json(err));
   }
+  // send: function(req) {
+  //   db.Send(req.body)
+  //   .then(dbModel => res.json(dbModel))
+  //   .catch(err => res.status(422).json(err));
+  // }
 };
 
 /*
