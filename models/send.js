@@ -6,12 +6,12 @@ const Send = (request) => {
     console.log("Request2: ", request)
 
     const output = `
-        <p>Name: ${request.name}</p>
-        <p>Phone: ${request.phone}</p>    
-        <p>Email: ${request.email}</p>
+        <p>Name: ${request.Name}</p>
+        <p>Phone: ${request.Phone}</p>    
+        <p>Email: ${request.Email}</p>
         <p>Message:
         <br>
-        ${request.message}</p>        
+        ${request.Message}</p>        
     `
 
     // call the main function which will take care of the nodemailer.

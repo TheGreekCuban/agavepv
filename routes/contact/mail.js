@@ -14,3 +14,9 @@ router.route("/")
 //   .delete(leadController.remove);
 
 module.exports = router;
+const router = require("express").Router();
+const leadController = require("../../controllers/leadController");
+
+// Matches with "/contact/mail"
+router.route("/")
+  .post(leadController.send);
