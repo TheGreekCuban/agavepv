@@ -23,5 +23,5 @@ app.use(sslRedirect(['production'], 301))
 mongoose.connect(process.env.MONGODB_URI || "https://535bc9f9-d802-479c-b38d-bc6110c22e8c.mock.pstmn.io/contact/mail");
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server is listening at http://localhost:${PORT}`)
+    console.log(`Server is listening at http://localhost:${process.env.PORT}`)
 })
