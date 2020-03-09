@@ -10,6 +10,8 @@ module.exports = {
   },
   send: function(req, res) {
     db.Send(req.body, res)
+    .then(dbModel => res.json(dbModel))
+    .catch(err => res.status(422).json(err));
   }
 };
 
