@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer")
 
 
-const Send = (request, response) => {
+const Send = (request) => {
 
     console.log("Request2: ", request)
 
@@ -16,8 +16,6 @@ const Send = (request, response) => {
 
     // call the main function which will take care of the nodemailer.
     main(output)
-    .then(response => response.json(`${request.Name} your email has been sent!`))
-    .catch(err => json(err));
 }
 
 async function main(output) {
