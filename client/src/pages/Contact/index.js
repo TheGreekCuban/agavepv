@@ -28,10 +28,10 @@ class Contact extends Component {
       event.preventDefault();
       if (this.state.fullName && this.state.email) {
         API.saveLead({
-          name: this.state.fullName,
-          phone: this.state.phone,
-          email: this.state.email,
-          message: this.state.message
+          Name: this.state.fullName,
+          Email: this.state.email,
+          Phone: this.state.phone,
+          Message: this.state.message
         })
         .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("error happening here"));
