@@ -16,8 +16,6 @@ class Contact extends Component {
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
       const { name, value } = event.target;
-      console.log("Current phone: ", this.state)
-      console.log("Current email: ", this.state.email)
       this.setState({
         [name]: value
       });
@@ -32,6 +30,14 @@ class Contact extends Component {
           Email: this.state.email,
           Phone: this.state.phone,
           Message: this.state.message
+        })
+        .then(res => {
+          API.sendMail({
+          Name: this.state.fullName,
+          Email: this.state.email,
+          Phone: this.state.phone,
+          Message: this.state.message
+          })
         })
         .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("error happening here"));
