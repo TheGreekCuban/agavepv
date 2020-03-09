@@ -42,7 +42,7 @@ class Contact extends Component {
           Phone: this.state.phone,
           Message: this.state.message
         })        
-        .then(res => this.sendMail())
+        //.then(res => this.sendMail())
         .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("[1]error happening here"));
       }

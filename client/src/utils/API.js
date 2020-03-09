@@ -7,7 +7,7 @@ export default {
     return axios.post("/contact/lead", leadData);
   },
 
-  sendMail: function(mailData) {
-    return axios.post("/contact/mail", mailData);
-  }
+  //sendMail: function(mailData) {
+  //   return axios.post("/contact/mail", mailData);
+  // }
 };
