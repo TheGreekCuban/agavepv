@@ -28,28 +28,23 @@ class Contact extends Component {
         Phone: this.state.phone,
         Message: this.state.message
       })
-      .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
       .catch(err => console.log("[2]error happening here"));
     }
-    
-    saveLead = () => {
-       API.saveLead({
+
+    // When the form is submitted, use the API.saveLead method to save the lead data
+    handleFormSubmit = event => {
+      event.preventDefault();
+
+      if (this.state.fullName && this.state.email) {
+        API.saveLead({
           Name: this.state.fullName,
           Email: this.state.email,
           Phone: this.state.phone,
           Message: this.state.message
         })        
         .then(res => this.sendMail())
+        .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("[1]error happening here"));
-    }
-
-
-
-    // When the form is submitted, use the API.saveLead method to save the lead data
-    handleFormSubmit = event => {
-      event.preventDefault();
-      if (this.state.fullName && this.state.email) {
-        this.saveLead();
       }
     };
 
