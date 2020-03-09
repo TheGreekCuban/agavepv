@@ -16,8 +16,8 @@ const Send = (request) => {
 
     // call the main function which will take care of the nodemailer.
     main(output)
-    .then(response => response.send("Status 200 OK, mail sent!"))
-    .catch(err => res.status(422).json(err));
+    .then((request, response) => response.json(`${request.Name} your email has been sent!`))
+    .catch(err => json(err));
 }
 
 async function main(output) {
