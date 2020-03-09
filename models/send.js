@@ -32,7 +32,7 @@ async function main(output) {
     let info = await transporter.sendMail({
         from: '"Admin" <av@agavepv.com>', // sender address
         to: "av@agavepv.com", // list of receivers
-        subject: "Alex Vellios - Someone is interested in working with you!", // Subject line
+        subject: "Alex  - Someone is interested in working with you!", // Subject line
         html: output // html body
     });
 
