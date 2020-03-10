@@ -25,25 +25,23 @@ class Contact extends Component {
     handleFormSubmit = event => {
       event.preventDefault();
 
+      let options = {
+        Name: this.state.fullName,
+        Email: this.state.email,
+        Phone: this.state.phone,
+        Message: this.state.message
+      }
       if (this.state.fullName && this.state.email) {
-        API.saveLead({
-          Name: this.state.fullName,
-          Email: this.state.email,
-          Phone: this.state.phone,
-          Message: this.state.message
-        })        
+        API.saveLead(options)        
         .then(res => {
-          API.sendMail({
-            Name: this.state.fullName,
-            Email: this.state.email,
-            Phone: this.state.phone,
-            Message: this.state.message
-          })
-          .then(res => console.log(res))
-          .catch(err => console.log("[2]error happening here"));
+          console.log("RES: ", res)
+          API.sendMail(options)
+          .catch(err => console.log("[2]error happening here", err.response));
         })
-        .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
-        .catch(err => console.log("[1]error happening here"));
+        .then(res => {
+          this.setState({ fullName: "", phone: "", email: "", message: ""})
+        })
+        .catch(err => console.log("[1]err happening here", err.response));
       }
     };
 

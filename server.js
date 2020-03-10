@@ -20,7 +20,7 @@ app.use(routes);
 app.use(sslRedirect(['production'], 301))
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "https://535bc9f9-d802-479c-b38d-bc6110c22e8c.mock.pstmn.io/contact/mail");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/agavepv");
 
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Server is listening at http://localhost:${process.env.PORT}`)
