@@ -21,4 +21,4 @@ app.post("/", (req, res, next) => {
 //   .put(leadController.update)
 //   .delete(leadController.remove);
 
-module.exports = router;
+module.exports = app;
