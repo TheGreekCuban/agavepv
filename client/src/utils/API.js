@@ -10,7 +10,7 @@ export default {
         'Accept': 'application/json',
         'Content-Type': 'application/json;charset=UTF-8'
       },
-      body: leadData
+      body: JSON.stringify({leadData})
     };
     console.log("Lead Data: ", leadData)
     return fetch("/contact/lead", options);
@@ -23,7 +23,7 @@ export default {
         'Accept': 'application/json',
         'Content-Type': 'application/json;charset=UTF-8'
       },
-      body: mailData
+      body: JSON.stringify({mailData})
     };
     console.log("Mail Data: ", mailData)
     return fetch("/contact/mail", options);
