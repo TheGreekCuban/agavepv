@@ -31,6 +31,7 @@ class Contact extends Component {
         Phone: this.state.phone,
         Message: this.state.message
       }
+      
       if (this.state.fullName && this.state.email) {
         API.saveLead(options)        
         .then(res => {
