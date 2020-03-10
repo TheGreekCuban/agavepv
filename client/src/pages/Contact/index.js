@@ -28,6 +28,7 @@ class Contact extends Component {
         Phone: this.state.phone,
         Message: this.state.message
       })
+      .then(res => console.log(res))
       .catch(err => console.log("[2]error happening here"));
     }
 
@@ -42,7 +43,7 @@ class Contact extends Component {
           Phone: this.state.phone,
           Message: this.state.message
         })        
-        //.then(res => this.sendMail())
+        .then(res => this.sendMail())
         .then(res => this.setState({ fullName: "", phone: "", email: "", message: ""}))
         .catch(err => console.log("[1]error happening here"));
       }
