@@ -8,9 +8,9 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  send: function(req) {
-    db.Send(req.body)
-    .then(response => console.log("Message[2]: ", response))
+  send: function(request, response) {
+    db.Send(request.body)
+    .then(dbSend => response.json(dbSend))
     .catch(err => console.log(err.response));
   }
 };
