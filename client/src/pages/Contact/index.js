@@ -31,7 +31,7 @@ class Contact extends Component {
         Phone: this.state.phone,
         Message: this.state.message
       }
-      
+
       if (this.state.fullName && this.state.email) {
         API.saveLead(options)        
         .then(res => {
@@ -39,6 +39,7 @@ class Contact extends Component {
           API.sendMail(options)
         })
         .then(res => {
+          console.log("RES[2]: ", res)
           this.setState({ fullName: "", phone: "", email: "", message: ""})
         })
         .catch(err => console.log("[1]err happening here", err.response));
