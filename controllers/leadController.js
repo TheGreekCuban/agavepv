@@ -10,6 +10,8 @@ module.exports = {
   },
   send: function(req) {
     db.Send(req.body)
+    .then(dbModel => console.log("DbModel: ", dbModel))
+    .catch(err => console.log(err.response));
   }
 };
 
