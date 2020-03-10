@@ -1,31 +1,13 @@
-//import axios from "axios";
+import axios from "axios";
 
 export default {
 
   // Saves a contact info and messaege to the database
   saveLead: function(leadData) {
-    const options = {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json;charset=UTF-8'
-      },
-      body: JSON.stringify(leadData)
-    };
-    console.log("Lead Data: ", leadData)
-    return fetch("/contact/lead", options);
+    return axios.post("/contact/lead", leadData);
   },
 
   sendMail: function(mailData) {
-    const options = {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json;charset=UTF-8'
-      },
-      body: JSON.stringify(mailData)
-    };
-    console.log("Mail Data: ", mailData)
-    return fetch("/contact/mail", options);
+    return axios.post("/contact/mail", mailData);
   }
 };
