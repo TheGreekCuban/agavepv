@@ -44,7 +44,8 @@ async function main(output) {
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    return alert(`Thank you ${request.Name}, your message has been sent. Someone will be in contact with you shortly!`)
+
+    return console.log(`Thank you ${request.Name}, your message has been sent. Someone will be in contact with you shortly!`)
 }
 
 // Export the model
