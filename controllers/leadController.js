@@ -10,7 +10,6 @@ module.exports = {
   },
   send: function(req) {
     db.Send(req.body)
-    .catch(err => console.log(err.response));
   }
 };
 
