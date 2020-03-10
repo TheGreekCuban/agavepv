@@ -10,8 +10,8 @@ module.exports = {
   },
   send: function(req) {
     db.Send(req.body)
-    .then(response => console.log("Message: ", response))
-    .catch(err => console.log(err.response));
+    // .then(response => console.log("Message: ", response))
+    // .catch(err => console.log(err.response));
   }
 };
 
