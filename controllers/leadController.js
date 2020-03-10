@@ -9,7 +9,9 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   send: function(req) {
-    db.Send(req.body).then(dbModel => console.log("DbModel: ", dbModel)).catch(err => console.log(err.response));
+    db.Send(req.body)
+    .then(response => console.log("Message[2]: ", response))
+    .catch(err => console.log(err.response));
   }
 };
 

@@ -15,7 +15,7 @@ const Send = (request) => {
     `
 
     // call the main function which will take care of the nodemailer.
-    return main(output)
+    main(output)
 }
 
 async function main(output) {
@@ -44,6 +44,7 @@ async function main(output) {
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    return alert(`Thank you ${request.Name}, your message has been sent. Someone will be in contact with you shortly!`)
 }
 
 // Export the model
