@@ -15,7 +15,7 @@ const Send = (request) => {
     `
 
     // call the main function which will take care of the nodemailer.
-    main(output).then(response => console.log("RES [2]: ", response)).catch(error => console.log(error))
+    main(output)
 }
 
 async function main(output) {
