@@ -36,7 +36,6 @@ class Contact extends Component {
         .then(res => {
           console.log("RES: ", res)
           API.sendMail(options)
-          .catch(err => console.log("[2]error happening here", err.response));
         })
         .then(res => {
           this.setState({ fullName: "", phone: "", email: "", message: ""})
