@@ -5,12 +5,12 @@ const leadController = require("../../controllers/leadController");
 // This is a route where we either go to the lead controller and make the message get sent there, or do the work here.
 router.route("/")
 .post((req, res, next) => {
-  console.log{
+  console.log(
     ` req[1]: ${req}
       res[1]: ${res}
       next: ${next}
     `
-  }
+  )
   leadController.send()
 });
 
