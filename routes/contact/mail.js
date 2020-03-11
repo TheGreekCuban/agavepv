@@ -1,10 +1,10 @@
-const express = require('express')
-const app = express()
+const router = require("express").Router();
 const leadController = require("../../controllers/leadController");
 
 // Matches with "/contact/mail"
 // This is a route where we either go to the lead controller and make the message get sent there, or do the work here.
-app.post("/", (req, res) => leadController.send(req, res));
+router.route("/")
+.post(leadController.send);
 
 // Matches with "/api/leads/:id"
 // router
@@ -13,4 +13,4 @@ app.post("/", (req, res) => leadController.send(req, res));
 //   .put(leadController.update)
 //   .delete(leadController.remove);
 
-module.exports = app;
+module.exports = router;

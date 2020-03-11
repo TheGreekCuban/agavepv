@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer")
 
 
-const Send = (request, response) => {
+const Send = (request) => {
 
     console.log("Request2: ", request)
 
