@@ -6,12 +6,12 @@ module.exports = {
     db.Lead
       .create(req.body)
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+      .catch(err => res.json(err));
   },
-  send: function(req) {
+  send: function(req, res) {
     db.Send(req.body)
-    // .then(response => console.log("Message: ", response))
-    // .catch(err => console.log(err.response));
+    .then(response => res.json(response))
+    .catch(err => res.json(err));
   }
 };
 
