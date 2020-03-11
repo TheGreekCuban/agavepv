@@ -15,10 +15,10 @@ const Send = (request, response) => {
     `
 
     // call the main function which will take care of the nodemailer.
-    main(output)
+    main(output, response)
 }
 
-async function main(output) {
+async function main(output, response) {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         service: "Gmail",
