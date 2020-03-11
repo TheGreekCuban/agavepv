@@ -36,9 +36,8 @@ class Contact extends Component {
         API.saveLead(options)        
         .then(res => {
           console.log("RES: ", res)
-          API.sendMail(options).then(res => {
-            console.log("RES[2]: ", res)
-          })
+          API.sendMail(options)
+          .then(res => console.log("RES[2]: ", res))
           .catch(err => console.log("[2]err happening here", err.response))
         })
         .then(() => {
