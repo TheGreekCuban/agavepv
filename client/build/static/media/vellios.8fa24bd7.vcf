@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Alexander Vellios
+N:Vellios;Alexander ;;;
+item1.EMAIL;TYPE=INTERNET:AV@Agavepv.com
+item1.X-ABLabel:
+item2.TEL:(914) 584-8351
+item2.X-ABLabel:
+item3.ORG:Agave Property Ventures
+item3.X-ABLabel:
+item4.TITLE:Co-Founder
+item4.X-ABLabel:
+PHOTO:https://lh3.googleusercontent.com/-U40O9dBF1dA/Xf_OrIhLj1I/AAAAAAAAAA
+ A/go5wD-SdUJU4e7xkKHPOyA7gsiHz0DxNwCOQCEAE/photo.jpg
+END:VCARD
