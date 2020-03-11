@@ -38,8 +38,7 @@ class Contact extends Component {
           console.log("RES: ", res)
           API.sendMail(options)
         })
-        .then(res => {
-          console.log("RES[2]: ", res)
+        .then(() => {
           this.setState({ fullName: "", phone: "", email: "", message: ""})
         })
         .catch(err => console.log("[1]err happening here", err.response));

@@ -6,8 +6,8 @@ const leadController = require("../../controllers/leadController");
 // This is a route where we either go to the lead controller and make the message get sent there, or do the work here.
 app.post("/", (req, res, next) => {
   console.log(
-    ` req[1]: ${req.body}
-      res[1]: ${res.data}
+    ` req[1]: ${JSON.stringify(req.body)}
+      res[1]: ${JSON.stringify(res)}
     `
   )
   leadController.send(req, res)
