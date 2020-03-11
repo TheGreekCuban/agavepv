@@ -5,7 +5,6 @@ const leadController = require("../../controllers/leadController");
 // This is a route where we either go to the lead controller and make the message get sent there, or do the work here.
 router.route("/")
 .post(leadController.send)
-.then(res => res.end());
 
 // Matches with "/api/leads/:id"
 // router

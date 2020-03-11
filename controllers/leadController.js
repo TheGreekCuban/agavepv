@@ -10,7 +10,7 @@ module.exports = {
   },
   send: function(req, res) {
     db.Send(req.body)
-    .then(response => res.send(response))
+    .then(response => response.end('<h2>End</h2>'))
     .catch(err => res.send(err));
   }
 };
