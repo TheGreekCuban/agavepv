@@ -37,7 +37,9 @@ class Contact extends Component {
         .then(res => {
           this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res.data})
         })
-        .catch(err => console.log("[1]err happening here", err.response));
+        .catch(err => {
+          console.log("[1]err happening here", err)
+        });
     }
 
     handleFormSubmit = event => {

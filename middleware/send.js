@@ -1,10 +1,9 @@
 const nodemailer = require("nodemailer")
 
 
-const Send = (request, response) => {
+const Send = (request) => {
 
-    console.log(`Request2: ${request}`)
-    console.log(`Response 2: ${response}`)
+    console.log(`Request2: ${JSON.stringify(request)}`)
 
     const output = `
         <p>Name: ${request.Name}</p>
