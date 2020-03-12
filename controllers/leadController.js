@@ -7,7 +7,7 @@ module.exports = {
     db.Lead
       .create(req.body)
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.json(err));
+      .catch(err => res.status(422).json(err));
   },
   send: function(req, res) {
     mw.Send(req.body)

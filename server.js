@@ -3,7 +3,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/agavepv"
 const db = mongoose.connection
 
