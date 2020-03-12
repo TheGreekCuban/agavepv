@@ -22,6 +22,12 @@ class Contact extends Component {
       });
     };
 
+    sendMail = options => {
+      API.sendMail(options)
+      .then(res => console.log("RES[2]: ", res))
+      .catch(err => console.log("[2]err happening here", err.response))
+    }
+
     handleFormSubmit = event => {
       event.preventDefault();
 
@@ -31,16 +37,15 @@ class Contact extends Component {
         Phone: this.state.phone,
         Message: this.state.message
       }
+
       if (this.state.fullName && this.state.email) {
         API.saveLead(options)        
         .then(res => {
+          this.sendMail(options)
           console.log("RES: ", res)
-          API.sendMail(options)
-          .then(res => console.log("RES[2]: ", res))
-          .catch(err => console.log("[2]err happening here", err.response))
         })
-        .then(() => {
-          this.setState({ fullName: "", phone: "", email: "", message: ""})
+        .then(res => {
+          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res.data})
         })
         .catch(err => console.log("[1]err happening here", err.response));
       }
