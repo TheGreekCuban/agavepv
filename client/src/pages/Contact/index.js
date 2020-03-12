@@ -37,7 +37,7 @@ class Contact extends Component {
 
     saveLead = () => {
       API.saveLead(this.options)        
-      .then(res => this.sendMail())
+      .then(res => this.sendMail(this.options))
       .catch(err => console.log("[1]err happening here", err));
     }
 
@@ -45,7 +45,7 @@ class Contact extends Component {
     handleFormSubmit = event => {
       event.preventDefault();
       if (this.state.fullName && this.state.email) { 
-        this.saveLead() 
+        this.saveLead(this.options) 
       }
     };
 
