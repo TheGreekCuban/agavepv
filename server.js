@@ -3,7 +3,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/agavepv"
 const db = mongoose.connection
 
@@ -30,6 +29,6 @@ db.once("open", () => console.log(`Connected to mongoose!`))
 
 
 
-app.listen(PORT, function(){
-    console.log(`Server is listening at http://localhost:${PORT}/`)
+app.listen(process.env.PORT, function(){
+    console.log(`Server is listening at http://localhost:${3030}/`)
 })

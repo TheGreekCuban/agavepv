@@ -7,6 +7,7 @@ router.use("/contact", contactRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(request, response) {
+  console.log(`Public request route: ${rquest}`)
   response.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
