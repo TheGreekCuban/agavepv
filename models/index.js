@@ -1,5 +1,4 @@
 module.exports = {
-    Lead: require("./lead"),
-    Send: require("./send")
+    Lead: require("./lead")
   };
   

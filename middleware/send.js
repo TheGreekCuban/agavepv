@@ -9,13 +9,11 @@ const Send = (request) => {
         <p>Name: ${request.Name}</p>
         <p>Phone: ${request.Phone}</p>    
         <p>Email: ${request.Email}</p>
-        <p>Message:
-        <br>
-        ${request.Message}</p>        
+        <p>Message: ${request.Message}</p>        
     `
 
     // call the main function which will take care of the nodemailer.
-    main(output)
+    return main(output)
 }
 
 async function main(output) {

@@ -28,8 +28,6 @@ mongoose.connect(MONGODB_URI);
 db.on("error", console.error.bind(console, "connection error: "))
 db.once("open", () => console.log(`Connected to mongoose!`))
 
-
-
 app.listen(PORT, function(){
     console.log(`Server is listening at http://localhost:${PORT}/`)
 })

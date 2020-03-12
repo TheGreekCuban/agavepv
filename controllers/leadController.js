@@ -1,4 +1,5 @@
 const db = require("../models");
+const mw = require("../middleware")
 
 // Defining methods for the leadController
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
       .catch(err => res.json(err));
   },
   send: function(req, res) {
-    db.Send(req.body)
+    mw.Send(req.body)
     res.end()
   }
 };
