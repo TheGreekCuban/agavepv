@@ -12,17 +12,18 @@ module.exports = {
   send: function(req, res) {
     mw.Send(req.body)
     res.end()
-  }
-};
-
-/*
-findAll: function(req, res) {
+  },
+  findAll: function(req, res) {
     db.Lead
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  },
+  }
+};
+
+/*
+
   findById: function(req, res) {
     db.Lead
       .findById(req.params.id)
