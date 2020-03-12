@@ -3,6 +3,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+const PORT = process.env.PORT
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/agavepv"
+const db = mongoose.connection
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -20,9 +23,12 @@ app.use(routes);
 app.use(sslRedirect(['production'], 301))
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/agavepv");
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+
+db.on("error", console.error.bind(console, "connection error: "))
+db.once("open", () => console.log(`Connected to mongoose!`))
 
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server is listening at http://localhost:${process.env.PORT}`)
+app.listen(PORT, function(){
+    console.log(`Server is listening at http://localhost:${PORT}/`)
 })
