@@ -35,7 +35,7 @@ class Contact extends Component {
           console.log("RES: ", res)
         })
         .then(res => {
-          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res.data})
+          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res})
         })
         .catch(err => {
           console.log("[1]err happening here", err)
