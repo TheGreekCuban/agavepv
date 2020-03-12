@@ -28,6 +28,18 @@ class Contact extends Component {
       .catch(err => console.log("[2]err happening here", err.response))
     }
 
+    saveLead = options => {
+      API.saveLead(options)        
+        .then(res => {
+          this.sendMail(options)
+          console.log("RES: ", res)
+        })
+        .then(res => {
+          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res.data})
+        })
+        .catch(err => console.log("[1]err happening here", err.response));
+    }
+
     handleFormSubmit = event => {
       event.preventDefault();
 
@@ -39,15 +51,7 @@ class Contact extends Component {
       }
 
       if (this.state.fullName && this.state.email) {
-        API.saveLead(options)        
-        .then(res => {
-          this.sendMail(options)
-          console.log("RES: ", res)
-        })
-        .then(res => {
-          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res.data})
-        })
-        .catch(err => console.log("[1]err happening here", err.response));
+        this.saveLead(options)
       }
     };
 
