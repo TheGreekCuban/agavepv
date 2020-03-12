@@ -39,8 +39,12 @@ class Contact extends Component {
           .then(res => console.log("RES[2]: ", res))
           .catch(err => console.log("[2]err happening here", err.response))
         })
+        .then(() => {
+          this.setState({ fullName: "", phone: "", email: "", message: ""})
+        })
+        .catch(err => console.log("[1]err happening here", err.response));
       }
-    }
+    };
 
   render() {
     return (
