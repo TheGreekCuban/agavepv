@@ -10,8 +10,7 @@ class Contact extends Component {
       fullName: "",
       phone: "",
       email: "",
-      message: "",
-      prevState: ""
+      message: ""
     };
 
     //Need a componentDidMount calling the scraper function
@@ -35,23 +34,16 @@ class Contact extends Component {
     //Need a function that will call the api sendmail method and activate nodemailer
     sendMail = options => {
       API.sendMail(options)
-      .then(res => console.log("RES[2]: ", res))
+      .then(res => res.end())
       .catch(err => console.log("[2]err happening here", err.response))
     }
 
     //Need a function that will call the api.saveLead method and save the lead to the db
     saveLead = options => {
       API.saveLead(options)        
-        .then(res => {
-          this.sendMail(options)
-          console.log("RES: ", res)
-        })
-        .then(res => {
-          this.setState({ fullName: "", phone: "", email: "", message: "", prevState: res})
-        })
-        .catch(err => {
-          console.log("[1]err happening here", err)
-        });
+        .then(res => this.sendMail(options))
+        .catch(err => console.log("[1]err happening here", err))
+        .finally(() => this.setState({ fullName: "", phone: "", email: "", message: ""}))
     }
 
     handleFormSubmit = event => {
