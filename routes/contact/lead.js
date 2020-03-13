@@ -2,7 +2,7 @@ const router = require("express").Router();
 const leadController = require("../../controllers/leadController");
 
 
-// Matches with "/contact/leads"
+// Matches with "/contact/lead"
 router.route("/")
 .get(leadController.findAll)
 .post(leadController.create);

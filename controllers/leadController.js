@@ -6,11 +6,13 @@ module.exports = {
   create: function(req, res) {
     db.Lead
       .create(req.body)
-      .then(dbModel => res.send(dbModel))
+      .then(response => res.send(response))
       .catch(err => res.status(422).json(err));
   },
   send: function(req, res) {
     mw.Send(req.body)
+    .then(response => response.end())
+    .catch(err => res.status(422).json(err))
     res.end()
   },
   findAll: function(req, res) {
@@ -19,6 +21,11 @@ module.exports = {
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  scrape: function(req, res) {
+    mw.Scrape
+    .then(res => res.send("scrape complete!"))
+    .catch(err => res.status(422).json(err));
   }
 };
 

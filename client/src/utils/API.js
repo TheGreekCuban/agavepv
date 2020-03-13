@@ -9,5 +9,9 @@ export default {
 
   sendMail: function(mailData) {
     return axios.post("/contact/mail", mailData);
+  },
+
+  scrapeArticles: function() {
+    return axios.get("/scrape")
   }
 };

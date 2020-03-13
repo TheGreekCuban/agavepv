@@ -1,4 +1,5 @@
 module.exports = {
-    Send: require("./send")
+    Send: require("./send"),
+    Scrape: require("./scrape")
   };
   

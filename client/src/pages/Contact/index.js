@@ -6,14 +6,24 @@ import "./style.css";
 
 
 class Contact extends Component {
-  state = {
-    fullName: "",
-    phone: "",
-    email: "",
-    message: "",
-    prevState: ""
-  };
+    state = {
+      fullName: "",
+      phone: "",
+      email: "",
+      message: "",
+      prevState: ""
+    };
 
+    //Need a componentDidMount calling the scraper function
+    // componentDidMount = () => {
+    //   this.scrapeArticles()
+    // }
+
+    //Need a function that will use the api method and scrape articles from lookinto
+    scrapeArticles = () => {
+      API.scrapeArticles()
+    }
+    
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
       const { name, value } = event.target;
@@ -22,12 +32,14 @@ class Contact extends Component {
       });
     };
 
+    //Need a function that will call the api sendmail method and activate nodemailer
     sendMail = options => {
       API.sendMail(options)
       .then(res => console.log("RES[2]: ", res))
       .catch(err => console.log("[2]err happening here", err.response))
     }
 
+    //Need a function that will call the api.saveLead method and save the lead to the db
     saveLead = options => {
       API.saveLead(options)        
         .then(res => {
