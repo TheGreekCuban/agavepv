@@ -34,14 +34,15 @@ class Contact extends Component {
     //Need a function that will call the api sendmail method and activate nodemailer
     sendMail = options => {
       API.sendMail(options)
-      .catch(err => console.log("[2]err happening here", err))
+      .then(response => console.log("sendMail Response: ", response))
+      .catch(err => console.log("sendMail error here", err))
     }
 
     //Need a function that will call the api.saveLead method and save the lead to the db
     saveLead = options => {
       API.saveLead(options)        
         .then(res => this.sendMail(options))
-        .catch(err => console.log("[1]err happening here", err))
+        .catch(err => console.log("saveLead error: ", err))
         .finally(() => this.setState({ fullName: "", phone: "", email: "", message: ""}))
     }
 
