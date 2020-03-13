@@ -24,7 +24,7 @@ app.use(routes);
 app.use(sslRedirect(['production'], 301))
 
 // Connect to the Mongo DB
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 db.on("error", console.error.bind(console, "connection error: "))
 db.once("open", () => console.log(`Connected to mongoose!`))

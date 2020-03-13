@@ -6,7 +6,8 @@ const cheerio = require("cheerio")
 
 const Scrape = () => {
     //First we grab the body of the html with axios
-    axios.get("https://therealdeal.com/").then(response => {
+    axios.get("https://www.tapinto.net/towns/newark/sections/development").then(response => {
+        console.log(`Scraper response: ${response}`)
         //Then we load that into cheerio and save it to $ for the shorthand selector
         let $ = cheerio.load(response.data)
         let grabbedElement = $(".trd-article-lists-content").find("a")

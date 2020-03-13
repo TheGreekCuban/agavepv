@@ -1,4 +1,5 @@
 import axios from "axios";
+//import { request, response } from "express";
 
 export default {
 
@@ -12,6 +13,8 @@ export default {
   },
 
   scrapeArticles: function() {
-    return axios.get("/scrape")
+    return axios.get("/scrape", (request, response) => {
+      console.log("Response frontend: ", response)
+    })
   }
 };
