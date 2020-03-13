@@ -34,7 +34,6 @@ class Contact extends Component {
     //Need a function that will call the api sendmail method and activate nodemailer
     sendMail = options => {
       API.sendMail(options)
-      .then(res => res.end())
       .catch(err => console.log("[2]err happening here", err))
     }
 
