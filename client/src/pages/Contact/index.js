@@ -35,7 +35,7 @@ class Contact extends Component {
     sendMail = options => {
       API.sendMail(options)
       .then(res => res.end())
-      .catch(err => console.log("[2]err happening here", err.response))
+      .catch(err => console.log("[2]err happening here", err))
     }
 
     //Need a function that will call the api.saveLead method and save the lead to the db
