@@ -1,5 +1,5 @@
 module.exports = {
     Lead: require("./lead"),
-    Scraper: require("./Scraper")
+    Scraper: require("./scraper")
   };
   
