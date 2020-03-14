@@ -4,9 +4,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/agavepv"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/agavepv"
 const db = mongoose.connection
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3030
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -25,7 +25,7 @@ app.use(sslRedirect(['production'], 301))
 
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI, {
-  useUnifiedTopology: true, 
+  useUnifiedTopology: false, 
   useNewUrlParser: true
 });
 
