@@ -29,6 +29,7 @@
     "letsencrypt": "^2.1.10",
     "materialize-css": "^1.0.0-rc.2",
     "minimist": ">=1.2.3",
+    "kind-of": ">=6.0.3",
     "mongodb": "^3.5.5",
     "mongoose": "^5.3.16",
     "nodemailer": "^6.4.4",
