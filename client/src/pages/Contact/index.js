@@ -41,7 +41,10 @@ class Contact extends Component {
     //Need a function that will call the api.saveLead method and save the lead to the db
     saveLead = options => {
       API.saveLead(options)        
-        .then(res => this.sendMail(options))
+        .then(res => {
+          this.sendMail(options)
+          res.text()
+        })
         .catch(err => console.log("saveLead error: ", err))
         .finally(() => this.setState({ fullName: "", phone: "", email: "", message: ""}))
     }
