@@ -14,9 +14,9 @@ class Contact extends Component {
     };
 
     //Need a componentDidMount calling the scraper function
-    // componentDidMount = () => {
-    //   this.scrapeArticles()
-    // }
+    componentDidMount = () => {
+       //   this.scrapeArticles()
+    }
 
     //Need a function that will use the api method and scrape articles from lookinto
     scrapeArticles = () => {
@@ -34,7 +34,7 @@ class Contact extends Component {
     //Need a function that will call the api sendmail method and activate nodemailer
     sendMail = options => {
       API.sendMail(options)
-      .then(response => console.log("sendMail Response: ", response))
+      .then(response => console.log("sendMail Response: ", response.status))
       .catch(err => console.log("sendMail error here", err))
     }
 
@@ -43,7 +43,6 @@ class Contact extends Component {
       API.saveLead(options)        
         .then(res => {
           this.sendMail(options)
-          res.text()
         })
         .catch(err => console.log("saveLead error: ", err))
         .finally(() => this.setState({ fullName: "", phone: "", email: "", message: ""}))

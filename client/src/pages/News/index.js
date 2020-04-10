@@ -11,6 +11,7 @@ class News extends Component {
     return (
       <main id="news" className="section scrollspy container">
         <h1>More About Newark, NJ</h1>
+        <button type="submit"><a href="/scrape/">SCRAPE</a></button>
       </main>
     );
   }
