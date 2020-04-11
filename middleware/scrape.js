@@ -25,6 +25,7 @@ const Scrape = (req, res) => {
             .findOne({ title: result.titile }, (error, existingArticle) => {
                 if (existingArticle === null) {
                     db.Scraper.create(result)
+                        //This is where I will want to .find({limit: 4} and send it back to the frontend to map out the data into cards)
                         .then(dbScraper => console.log(dbScraper))
                         .catch(error => console.log(error))
                 }
