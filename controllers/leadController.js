@@ -11,8 +11,6 @@ module.exports = {
   },
   send: function(req, res) {
     mw.Send(req.body)
-    .then(response => response.end())
-    .catch(err => res.status(422).json(err))
     res.end()
   },
   findAll: function(req, res) {

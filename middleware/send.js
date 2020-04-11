@@ -16,7 +16,7 @@ const Send = (request) => {
     return main(output)
 }
 
-async function main(output) {
+const main = async(output) => {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         service: "Gmail",
@@ -29,7 +29,7 @@ async function main(output) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: '"Admin" <av@agavepv.com>', // sender address
-        to: "av@agavepv.com, ag@agavepv.com",// list of receivers
+        to: "av@agavepv.com", // list of receiversag@agavepv.com
         subject: "Someone is interested in working with Agave PV!", // Subject line
         html: output // html body
     });
@@ -40,8 +40,6 @@ async function main(output) {
 
     console.log("Message sent: %s", info.messageId);
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    return info
 }
 
 // Export the model

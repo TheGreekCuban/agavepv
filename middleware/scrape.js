@@ -2,8 +2,8 @@ const db = require("../models")
 const axios = require("axios")
 const cheerio = require("cheerio")
 
-const Scrape = (req, res) => {
-    console.log(`REQ: ${req}, RES: ${res}`)
+const Scrape = async(req, res) => {
+    return "this is the return"
     /*
     //First we grab the body of the html with axios
     axios.get("https://www.tapinto.net/towns/newark/sections/development").then(response => {

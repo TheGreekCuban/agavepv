@@ -17,11 +17,6 @@ class Contact extends Component {
     componentDidMount = () => {
        //   this.scrapeArticles()
     }
-
-    //Need a function that will use the api method and scrape articles from lookinto
-    scrapeArticles = () => {
-      API.scrapeArticles()
-    }
     
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {

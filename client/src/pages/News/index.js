@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import API from "../../utils/API"
 
 
 class News extends Component {
@@ -7,11 +8,18 @@ class News extends Component {
     News: []
   };
 
+  scrapeArticles = () => {
+    API.scrapeArticles()
+  }
+
+  componentDidMount() {
+    this.scrapeArticles()
+  }
+
   render() {
     return (
       <main id="news" className="section scrollspy container">
         <h1>More About Newark, NJ</h1>
-        <button type="submit"><a href="/scrape/">SCRAPE</a></button>
       </main>
     );
   }
