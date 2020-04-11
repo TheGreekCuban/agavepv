@@ -22,8 +22,9 @@ module.exports = {
   },
   scrape: function(req, res) {
     mw.Scrape(req, res)
-      .then(articles => console.log("Articles: ", articles))
-      .catch(err => res.status(422).json(err));
+      //.then(articles => console.log("Articles: ", articles))
+      //.catch(err => res.status(422).json(err));
+      res.end()
   }
   //Need a save method to save the scraped articles, will call this in the middleware.
   //Need to rerout the findAll method to be the one to sort and send the saved data to the front
