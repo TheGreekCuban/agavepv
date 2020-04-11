@@ -2,10 +2,10 @@ const db = require("../models")
 const axios = require("axios")
 const cheerio = require("cheerio")
 
-const Scrape = (req, res) => {
+const Scrape = async(req, res) => {
 
     //First we grab the body of the html with axios
-    return axios.get("https://www.tapinto.net/towns/newark/sections/development").then(response => {
+    axios.get("https://www.tapinto.net/towns/newark/sections/development").then(response => {
         console.log("made it to back end")
         //Then we load that into cheerio and save it to $ for the shorthand selector
         let $ = cheerio.load(response.data)
@@ -21,8 +21,7 @@ const Scrape = (req, res) => {
             result.title = $(element).find(".container-section-name").text()
  
             //Create a new Scraper using the result obj built from scraping. First we search for a match by using findOne, if there is no match in the database then we create a new collection.
-            db.Scraper
-            .findOne({ title: result.titile }, (error, existingArticle) => {
+            db.Scraper.findOne({ title: result.titile }, (error, existingArticle) => {
                 if (existingArticle === null) {
                     db.Scraper.create(result)
                         //This is where I will want to .find({limit: 4} and send it back to the frontend to map out the data into cards)
