@@ -8,7 +8,33 @@ const Schema = mongoose.Schema;
 const ScraperSchema = new Schema({
   // `title` is required and of type String
   title: {
-    type: String
+    type: String,
+    required: true
+  },
+  // `link` is required type String
+  link: {
+    type: String,
+    required: false
+  },
+  description: {
+    type: String,
+    required: false
+  },
+  meta: {
+    type: String,
+    required: false
+  },
+  // `note` is an object that stores a Note id
+  // The ref property links the ObjectId to the Note model
+  // This allows us to populate the Article with an associated Note
+  note: [{
+    type: Schema.Types.ObjectId,
+    ref: "Note"
+  }],
+  saved: {
+    type: Boolean,
+    required: false,
+    default: false
   }
 });
 

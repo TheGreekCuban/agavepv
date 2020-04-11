@@ -9,7 +9,7 @@ class News extends Component {
   };
 
   scrapeArticles = () => {
-    API.scrapeArticles()
+    API.scrapeArticles().then(response => console.log(response))
   }
 
   componentDidMount() {
