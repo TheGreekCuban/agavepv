@@ -16,14 +16,6 @@ const ScraperSchema = new Schema({
     type: String,
     required: false
   },
-  description: {
-    type: String,
-    required: false
-  },
-  meta: {
-    type: String,
-    required: false
-  },
   // `note` is an object that stores a Note id
   // The ref property links the ObjectId to the Note model
   // This allows us to populate the Article with an associated Note
@@ -33,7 +25,7 @@ const ScraperSchema = new Schema({
   }],
   saved: {
     type: Boolean,
-    required: false,
+    required: true,
     default: false
   }
 });

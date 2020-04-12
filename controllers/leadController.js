@@ -4,6 +4,7 @@ const mw = require("../middleware")
 // Defining methods for the leadController
 module.exports = {
   create: function(req, res) {
+    console.log("LEAD", typeof(req.body))
     db.Lead
       .create(req.body)
       .then(response => res.send(response))
@@ -22,7 +23,10 @@ module.exports = {
   },
   scrape: function(req, res) {
     mw.Scrape(req, res)
-      .then(articles => res.send(articles))
+      .then(articles => {
+        res.send(articles)
+        db.Scraper(articles)
+      })
       .catch(err => res.status(422).json(err));
   }
   //Need a save method to save the scraped articles, will call this in the middleware.
