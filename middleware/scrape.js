@@ -26,6 +26,7 @@ const Scrape = async(req, res) => {
             return result
         })       
     })
+    return "hello1111"
 }
 
 module.exports = Scrape
