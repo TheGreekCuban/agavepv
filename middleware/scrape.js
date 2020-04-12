@@ -20,7 +20,9 @@ const Scrape = (req, res) => {
             //Add the text and href of every link, save them as properties of result
             result.image = $(element).find(".image").find("a").find("img").attr("src")
             result.link = `https://www.tapinto.net${$(element).find(".image").find("a").attr("href")}`
-            result.title = $(element).prevAll(".3").find(".title").find("h3").find("a").text()
+            i > 0 
+              ? result.title = $(element).prevAll(".3").find(".title").find("h3").find("a").text() 
+              : result.title = $(element).prevAll(".title").find(".title").find("h2").find("a").text()
             
             console.log(result)
             //Push the objects into an array that we will return up the route to the front end for mapping.
