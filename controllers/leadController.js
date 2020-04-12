@@ -25,7 +25,13 @@ module.exports = {
     mw.Scrape(req, res)
       .then(articles => {
         res.send(articles)
-        db.Scraper(articles)
+        articles.forEach(element => {
+          db.Scraper.findOne({title: element.title}, (error, existingArticle) => {
+            if(existingArticle === null) {
+              db.Scraper.create(element)
+            }  
+          })
+        })
       })
       .catch(err => res.status(422).json(err));
   }

@@ -10,9 +10,6 @@ class About extends Component {
     About: []
   };
 
-  componentDidMount = () => {
-    console.log("hello")
-  }
   render() {
     return (
         <main className="container section scrollspy" id="about">
