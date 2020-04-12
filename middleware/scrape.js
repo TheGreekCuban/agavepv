@@ -3,7 +3,7 @@ const cheerio = require("cheerio")
 const leadController = require("../controllers/leadController")
 
 //This is a scraping module where I use the axios package and cheerio.js to scrape articles from tapintonewark.net
-const Scrape = (req, res) => {
+const Scrape = () => {
 
     //First we grab the body of the html with axios
     return axios.get("https://www.tapinto.net/towns/newark/sections/development/articles").then(response => {
@@ -24,15 +24,14 @@ const Scrape = (req, res) => {
 
             //Need a conditional because first article on page has different structure.
             i > 0 
-              ? result.title = $(element).prevAll(".3").find(".title").find("h3").find("a").text() 
-              : result.title = $(element).prevAll(".title").find(".title").find("h2").find("a").text()
-            
-            //console.log(result)
+                ? result.title = $(element).prevAll(".3").find(".title").find("h3").find("a").text() 
+                : result.title = $(element).prevAll(".title").find(".title").find("h2").find("a").text()
 
             //Push the objects into an array that we will return up the route to the front end for mapping.
             data.push(result)
         })
-        
+
+        //Data is an array of objects containing the properties and values from each article.
         return data
     })
 }

@@ -22,7 +22,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   scrape: function(req, res) {
-    mw.Scrape(req, res)
+    mw.Scrape()
       .then(articles => {
         res.send(articles)
         articles.forEach(element => {
