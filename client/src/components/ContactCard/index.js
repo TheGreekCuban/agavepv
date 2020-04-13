@@ -5,9 +5,9 @@ import "./style.css";
 
 export function VCards(props) {
   return (
-      <div className="row center-align" >
+      <div className="center-align" >
       <div id="vCardTitle">Download Our V-Cards!</div>
-      <div className="card col s12 m8 l4 offset-l1">
+      <div className="card">
         <div className="card-content">
           <a id="actionButton" href={aGVc} download="Alexandre Goulet V-Card" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
           <div className="personalContactInfo">
@@ -18,7 +18,7 @@ export function VCards(props) {
           </div>
         </div>
       </div>
-      <div className="card col s12 m8 l4 offset-l1">
+      <div className="card">
         <div className="card-content section scrollspy" id="vCs">
           <a id="actionButton" href={aVVc} download="Alexander Vellios V-Card"className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
           <div className="personalContactInfo">

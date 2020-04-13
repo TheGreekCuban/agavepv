@@ -1,30 +1,28 @@
 nav {
     background-color: rgb(215, 215, 215);
-    padding: 0 5% 0 0;
-}
-
-.nav-wrapper {
-    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 100px ;
 }
 
 #navL {
-    font-size: 1.25em;
-    color: forestgreen;
+    font-size: 1em;
+    color: #608832;
 }
 
 #logo {
-    transform: translateY(-30%);
-    max-height: 250px;
+    max-width: 240px;
+    transform: translateY(-13.5%);
 }
 
-#hamburger {
-    font-size: 2.5em;
-    color: forestgreen;
+.sidenav-trigger {
+    display: none;
 }
 
 #nav-mobile {
-    transform: translateY(35%);
     color: #608832;
+    grid-column: 8 / span 5;
+    transform: translateY(7.5%);
 }
 
 .sidenav {
@@ -36,28 +34,47 @@ nav {
     text-shadow: 3px 3px 10px #107C10;
 }
 
-img#sNavLogo.responsive-img {
-    margin-top: 1.5%;
-    margin-left: -5%;
-}
 
-@media only screen and (min-width: 768px) {
-    nav {
-        height: 100px;
+
+@media only screen and (max-width: 1160px) {
+    #nav-mobile {
+        font-size: 1em;
+        grid-column: 6 / span 7;
+        justify-self: end;
     }
-  }
 
-@media only screen and (min-width: 360px) and (max-width: 767px) {
-    nav {
-        height: 75px;
+    #logo {
+        justify-self: start;
+    }
+} 
+
+@media only screen and (min-width: 360px) and (max-width: 905px) {
+
+    .sidenav-trigger {
+        display: inline;
+        font-size: 2em;
+        color: #608832;
+        align-self: start;
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
     }
 
     #hamburger {
-        font-size: 2em;
+        font-size: 1em;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+
+    a#logo {
+        justify-self: center;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
     }
 }
 
-@media only screen 
+/* @media only screen 
 and (min-device-width : 360px) 
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 3)
@@ -65,4 +82,4 @@ and (orientation : landscape) {
     nav {
         height: 100px;
     }
-}
+} */

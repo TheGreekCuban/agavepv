@@ -9,37 +9,30 @@ body {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  color: forestgreen;
+  color: #608832;
   font-size: 18px;
 }
 
-.divider {
+/* .divider {
   margin: 1.5% 0;
-}
+} */
 
 #root {
     min-height: 100%;
     overflow-x: hidden;
     display: grid;
-    grid-template:  "nav nav nav nav"
-                    "about about about about"
-                    "criteria criteria portfolio portfolio"
-                    "criteria criteria portfolio portfolio"
-                    "contact contact contact contact"
-                    "vCards vCards vCards vCards"
-                    "news news news news"
-                    "footer footer footer footer"; 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr repeat(12, minMax(1fr, 60px) 1fr);
+    grid-gap: 40px;
 }
 
 footer {
-    grid-area: footer;
     margin-top: auto;
+    grid-column: 1 / span 15;
 }
 
 header {
-    grid-area: nav;
     width: 100%;
+    grid-column: 1 / span 15;
 }
 
 #pageImages {
@@ -48,7 +41,7 @@ header {
   margin-right: auto;
 }
 
-@media screen and (max-width: 1030px) and (min-width: 320px) { 
+@media screen and (max-width: 1160px) and (min-width: 320px) { 
 
   #root {
    display: initial;

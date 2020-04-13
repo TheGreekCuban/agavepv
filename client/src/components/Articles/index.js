@@ -3,14 +3,14 @@ import React from "react";
 
 export const Article = props => {
     return (
-         <div className="card">
-           <div className="card-image">
+         <div className="cardContainer">
+           <div className="cardImage">
              <img alt={props.article._id} src={props.article.image}/>
            </div>
-           <div className="card-content">
+           <div className="cardContent">
                <p><strong>{props.article.title}</strong></p>
            </div>
-           <div className="card-action">
+           <div className="cardAction">
              <a href={props.article.link}>Read More</a>
            </div>
          </div>       

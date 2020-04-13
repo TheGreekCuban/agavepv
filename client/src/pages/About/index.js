@@ -12,7 +12,7 @@ class About extends Component {
 
   render() {
     return (
-        <main className="container section scrollspy" id="about">
+        <main className="section scrollspy" id="about">
           <h1>Agave Property Ventures</h1>
           <div className="divider"></div>
           <div className="responsive-img hide-on-small-only"><img id="skyline" alt="Newark NJ Skyline" src={nwrk}/></div>

@@ -1,5 +1,5 @@
 #contact {
-    grid-area: contact;
+    grid-column: 2 / span 12;
 }
 
 form {

@@ -19,17 +19,15 @@ class Nav extends Component {
   render() {
     return (
       <header>
-        <nav>
-        <div className="nav-wrapper">
-          <a href="/" className="brand-logo"><img className="responsive-img" id="logo" src={Logo} alt="logo"/></a>
+        <nav>          
           <a href="#!" data-target="mobile-demo" className="sidenav-trigger"><i id="hamburger" className="material-icons"><strong>menu</strong></i></a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <a href="/" id="logo"><img id="logo" src={Logo} alt="logo"/></a>
+          <ul id="nav-mobile">
             <li><a id="navL" href="#team">Team</a></li>
             <li><a id="navL" href="#criteria">Acquisition Criteria</a></li>
             <li><a id="navL" href="#portfolio">Portfolio</a></li>
             <li><a id="navL" href="#contact">Contact</a></li>            
           </ul>
-        </div>
       </nav>
 
       <ul className="sidenav" id="mobile-demo">

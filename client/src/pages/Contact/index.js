@@ -55,11 +55,10 @@ class Contact extends Component {
 
   render() {
     return (
-      <main id="contact" className="section scrollspy container"> 
+      <main id="contact" className="section scrollspy"> 
         <div className="title"></div><h1>Contact Us</h1>
         <div className="divider"></div>
-        <div className="row">
-          <form className="col s12">
+          <form>
             <Name
               value={this.state.fullName}
               onChange={this.handleInputChange}
@@ -87,7 +86,6 @@ class Contact extends Component {
               Submit
             </FormBtn>
           </form>
-        </div>
         <VCards />
       </main>
     );
