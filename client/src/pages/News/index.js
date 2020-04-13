@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import API from "../../utils/API"
-import  { Articles, SingleArt } from "../../components/Articles"
+import  { ArticleList } from "../../components/ArticleList"
 
 
 class News extends Component {
@@ -23,14 +23,8 @@ class News extends Component {
     return (
       <main id="news" className="section scrollspy container">
         <h1>More About Newark, NJ</h1>
-        <Articles>
-          {this.state.news.length ? this.state.news.map(article => (
-            <SingleArt key={article.title} title={article.title} link={article.link} image={article.image}>
-            </SingleArt>
-          )) : (
-            <h3>Check back later for updates!</h3>
-          )}
-        </Articles>
+        <ArticleList news={this.state.news}>
+        </ArticleList>
       </main>
     );
   }
