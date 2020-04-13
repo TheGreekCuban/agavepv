@@ -14,7 +14,11 @@ const ScraperSchema = new Schema({
   // `link` is required type String
   link: {
     type: String,
-    required: false
+    required: true
+  },
+  image: {
+    type: String,
+    required: true
   },
   // `note` is an object that stores a Note id
   // The ref property links the ObjectId to the Note model

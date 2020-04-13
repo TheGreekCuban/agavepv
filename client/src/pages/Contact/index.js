@@ -13,11 +13,6 @@ class Contact extends Component {
       message: ""
     };
 
-    //Need a componentDidMount calling the scraper function
-    componentDidMount = () => {
-       //   this.scrapeArticles()
-    }
-    
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
       const { name, value } = event.target;
