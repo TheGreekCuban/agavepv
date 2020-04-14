@@ -1,30 +1,61 @@
-#smIcon {
-    max-width: 2em;
-    color: forestgreen;
-    margin: 1em;
-}
 
-.page-footer {
+footer {
     background-color:rgb(215, 215, 215);
     border-top: 2px solid rgb(190, 188, 188);
     padding: 0;
-    color: forestgreen;
+    margin: 0;
+    color: #608832;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
 }
 
 .copyright {
-    padding: 0 0 1em 0;
     font-size: .75em;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    justify-self: center;
+    align-self: end;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .icons {
-        margin: 0 auto;
-        text-align: center;
+#smIcon {
+    max-width: 2em;
+    color: #608832;
+    margin: 1em;
+}
+
+.iconLeft {
+    grid-column: 2/-2;
+    grid-row: 1/-1;
+    justify-self: start;
+}
+
+.iconRight {
+    grid-column: 2/-2;
+    grid-row: 1/-1;
+    justify-self: end;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 680px) {
+
+    footer {
+        grid-template-rows: 2fr 1fr;
+    }
+    .iconLeft {
+        grid-column: 1/7;
+        justify-self: end;
+    }
+    
+    .iconRight {
+        grid-column: 7/-1;
+        justify-self: start;
+    }
+
+    .copyright {
+        align-self: end;
+        grid-row: 2;
+
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .icons {
-        margin-right: 5%;
-    }
-  }

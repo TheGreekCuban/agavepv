@@ -10,9 +10,9 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <main id="portfolio" className="section scrollspy">
+      <main id="portfolio" className="section" >
         <h1>Portfolio</h1>
-        <img id="fourtyTwoThird" src={fourtyTwoThird} alt="42 Third Street, Newark, NJ"/>
+        <img className=" scrollspy" id="fourtyTwoThird" src={fourtyTwoThird} alt="42 Third Street, Newark, NJ"/>
         <div id="propertyDescription"> 
         <p>
           42 3rd Street, Newark, NJ 07107

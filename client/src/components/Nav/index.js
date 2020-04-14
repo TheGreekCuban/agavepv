@@ -32,12 +32,11 @@ class Nav extends Component {
 
       <ul className="sidenav" id="mobile-demo">
       <a href="/" className="brand-logo"><img className="responsive-img" id="sNavLogo" src={Logo} alt="logo"/></a>
-        <li><a href="#about">About</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#criteria">Acquisition Criteria</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>    
+        <li><a href="#fourtyTwoThird">Portfolio</a></li>    
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#vCs">V-Cards</a></li>
+        <li><a href="#news">News</a></li>
       </ul> 
     </header>
     );
