@@ -16,7 +16,7 @@ main.about {
     max-width: 65%;
 }
 
-.title {
+.titleAPV {
     grid-column: 1 / -1;
     justify-self: center;
 }

@@ -3,25 +3,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 250px;
-    min-height: 170px;
+    min-width: 300px;
+    min-height: 180px;
     border: 2px solid black;
     padding: 5px;
-}
-
-div.der.contactCard {
-    grid-column: 3 / 6;
-}
-
-div.dre.contactCard {
-    grid-column: 8 / 11;
+    justify-self: center;
 }
 
 .personalContactInfo {
     font-size: .8em;
     display: flex;
-    justify-content: space-around;
-    transform: translateY(170%);
+    justify-content: space-between;
+    transform: translateY(190%);
+    padding: 0 10px;
+    margin: 0 5%;
 }
 
 a {
@@ -32,4 +27,15 @@ a {
     text-align: center;
     margin: 0;
     padding: 0 0 10px 0;
+}
+
+
+.der {
+    grid-area: vv;
+    margin: 10px 0;
+}
+
+.dre {
+    grid-area: vg;
+    margin: 10px 0;
 }

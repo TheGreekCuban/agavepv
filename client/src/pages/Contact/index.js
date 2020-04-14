@@ -59,7 +59,7 @@ class Contact extends Component {
     return (
       <main id="contact" className="section scrollspy"> 
           <form>
-            <div className="title"></div><h1>Contact Us</h1>
+            <div className="title"><h1>Contact Us</h1></div>
             <Name
               value={this.state.fullName}
               onChange={this.handleInputChange}

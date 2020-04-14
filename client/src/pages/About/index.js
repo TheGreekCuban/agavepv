@@ -13,7 +13,7 @@ class About extends Component {
   render() {
     return (
         <main className="about">
-          <h1 className="title">Agave Property Ventures</h1>
+          <h1 className="titleAPV">Agave Property Ventures</h1>
           <img id="skyline" alt="Newark NJ Skyline" src={nwrk}/>
           <div id="intro">
             <p>

@@ -1,29 +1,41 @@
 #contact {
     display: grid;
-    text-align: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-column: 1 / -1;
-    justify-content: center;
-    grid-auto-flow: row;
+    grid-template-areas: "tit tit tit tit"
+                            "fm fm fm fm"
+                            "vct vct vct vct"
+                            "vv vv vg vg";
 }
 
 form {
     padding: 2em;
-    grid-row: 1 / 2;
-    grid-column: 2 / -2;
+    grid-area: fm;
+}
+
+.title {
+    grid-area: tit;
+    text-align: center;
 }
 
 #vCardTitle {
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-    justify-self: center;
     font-size: 1.25em;
-    padding: 1em 0;
+    grid-area: vct;
+    text-align: center;
 }
 
-@media only screen and (min-width: 318px) and (max-width: 768px) {
+@media only screen and (min-width: 318px) and (max-width: 905px) {
    form {
        padding: 0;
    }
 }
+
+@media only screen and (min-width: 318px) and (max-width: 700px) {
+    #contact {
+         grid-template-areas:    "tit tit"
+                                 "fm fm"
+                                 "vct vct"
+                                 "vg vg"
+                                 "vv vv";
+     }
+}
+
+

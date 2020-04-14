@@ -13,10 +13,6 @@ body {
   font-size: 18px;
 }
 
-/* .divider {
-  margin: 1.5% 0;
-} */
-
 #root {
     min-height: 100%;
     overflow-x: hidden;
