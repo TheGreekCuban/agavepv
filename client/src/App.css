@@ -41,7 +41,7 @@ header {
   margin-right: auto;
 }
 
-@media screen and (max-width: 1160px) and (min-width: 320px) { 
+@media screen and (max-width: 1300px) and (min-width: 318px) { 
 
   #root {
    display: initial;

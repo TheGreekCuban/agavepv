@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Email, TextArea, FormBtn, Phone, Name } from "../../components/ContactForm";
-import { VCards } from "../../components/ContactCard/index.js";
+import { VCard } from "../../components/ContactCard/index.js";
 import "./style.css";
+import aVVc from "../../vellios.vcf"
+import aGVc from "../../goulet.vcf";
 
 
 class Contact extends Component {
@@ -56,9 +58,8 @@ class Contact extends Component {
   render() {
     return (
       <main id="contact" className="section scrollspy"> 
-        <div className="title"></div><h1>Contact Us</h1>
-        <div className="divider"></div>
           <form>
+            <div className="title"></div><h1>Contact Us</h1>
             <Name
               value={this.state.fullName}
               onChange={this.handleInputChange}
@@ -86,7 +87,9 @@ class Contact extends Component {
               Submit
             </FormBtn>
           </form>
-        <VCards />
+          <h1 id="vCardTitle">Download Our V-Cards!</h1>
+        <VCard name="Alexander Vellios" number="914-584-8351" email="av@agavepv.com" label="der" file={aVVc}/>
+        <VCard name="Alexandre Goulet" number="212-920-7658" email="ag@agavepv.com" label="dre" file={aGVc}/>
       </main>
     );
   }

@@ -37,7 +37,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 680px) {
+@media only screen and (min-width: 318px) and (max-width: 680px) {
 
     footer {
         grid-template-rows: 2fr 1fr;
@@ -45,11 +45,13 @@ footer {
     .iconLeft {
         grid-column: 1/7;
         justify-self: end;
+        transform: translateX(-10%);
     }
     
     .iconRight {
         grid-column: 7/-1;
         justify-self: start;
+        transform: translateX(10);
     }
 
     .copyright {

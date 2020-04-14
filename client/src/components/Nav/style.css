@@ -35,7 +35,6 @@ nav {
 }
 
 
-
 @media only screen and (max-width: 1160px) {
     #nav-mobile {
         font-size: 1em;
@@ -48,7 +47,7 @@ nav {
     }
 } 
 
-@media only screen and (min-width: 360px) and (max-width: 905px) {
+@media only screen and (min-width: 318px) and (max-width: 905px) {
 
     .sidenav-trigger {
         display: inline;
