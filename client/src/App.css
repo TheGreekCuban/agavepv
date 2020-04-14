@@ -35,12 +35,6 @@ header {
     grid-column: 1 / span 15;
 }
 
-#pageImages {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media screen and (max-width: 1300px) and (min-width: 318px) { 
 
   #root {

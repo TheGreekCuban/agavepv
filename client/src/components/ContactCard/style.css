@@ -4,9 +4,9 @@
     background-size: cover;
     background-position: center;
     min-width: 250px;
-    min-height: 160px;
-    text-align: center;
+    min-height: 170px;
     border: 2px solid black;
+    padding: 5px;
 }
 
 div.der.contactCard {
@@ -18,10 +18,18 @@ div.dre.contactCard {
 }
 
 .personalContactInfo {
-    transform: translateY(100%);
-    margin: 0;
+    font-size: .8em;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(170%);
+}
+
+a {
+    color: #608832;
 }
 
 .names {
-    margin: 5px auto;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px 0;
 }

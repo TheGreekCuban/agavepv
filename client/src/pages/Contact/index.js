@@ -87,7 +87,7 @@ class Contact extends Component {
               Submit
             </FormBtn>
           </form>
-          <h1 id="vCardTitle">Download Our V-Cards!</h1>
+          <p id="vCardTitle">Click Below To Download Our V-Cards!</p>
         <VCard name="Alexander Vellios" number="914-584-8351" email="av@agavepv.com" label="der" file={aVVc}/>
         <VCard name="Alexandre Goulet" number="212-920-7658" email="ag@agavepv.com" label="dre" file={aGVc}/>
       </main>
