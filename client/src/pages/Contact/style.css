@@ -1,5 +1,6 @@
 #contact {
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-column: 1 / -1;
@@ -19,4 +20,10 @@ form {
     justify-self: center;
     font-size: 1.25em;
     padding: 1em 0;
+}
+
+@media only screen and (min-width: 318px) and (max-width: 768px) {
+   form {
+       padding: 0;
+   }
 }

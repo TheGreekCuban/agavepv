@@ -32,10 +32,10 @@ class About extends Component {
           <img id="pageImages" src={vellios} alt="Alexander Vellios"/>
             <p >Alexander Vellios | Founder & Web Developer</p> 
             <p className="background">
-              Alexander has been involved in the Real Estate Industry since 2015. As a commercial leasing broker he successfully leased and subleased over 10,000 square feet of New York City Proper prime retail space in just under two years. In 2017, Alexander was named as one of New York City’s Dealmakers of the year by The New York Times. Since co-founding Agave Property Ventures, Alexander has shifted his focus to aquisitions and property management in the Newark, NJ market. 
+              Alexander has been involved in the Real Estate Industry since 2015. As a commercial leasing broker he successfully leased and subleased over 10,000 square feet of prime New York City Proper retail space in just under two years. In 2017, Alexander was named as one of New York City’s Dealmakers of the year by The New York Times. Since co-founding Agave Property Ventures, Alexander has shifted his focus to aquisitions and property management in the Newark, NJ market. 
             </p>
             <p className="background">  
-              In June 2019, Alexander began a second role at APV as the compnay's Web Application Developer. He has since designed and built the corporate website in addition to a backend API that has automated all of Agave Property Venture's underwriting, saving the company approximately $60,000 per annum. 
+              In June 2019, Alexander began a second role at APV as the compnay's Web Application Developer. He has since designed and built the corporate website in addition to a backend API that has automated the majority of Property Venture's core functions. 
             </p>
           </div>   
         </main>

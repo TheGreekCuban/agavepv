@@ -1,16 +1,37 @@
-#portfolio {
-    grid-column: 2 / span 12;
+.portfolio {
     text-align: center;
-    line-height: .5em;
+    display: grid;
+    grid-template-areas:    "port cri"
+                            "port cri"
 }
-
-h1 {
-    text-align: center;
-}
-
 #fourtyTwoThird {
     max-width: 200px;
     max-height: 200px;
     border: solid black 2px;
 }
 
+.port {
+    grid-area: port;
+    background-color: #608832;
+    border: 20px white solid;
+    color: white;
+    transform: translateY(-30%);
+}
+
+#criteria {
+    grid-area: cri;
+    transform: translateY(10%);
+}
+
+
+@media only screen and (min-width: 318px) and (max-width: 905px) {
+    .portfolio {
+        grid-template-areas: "port port"
+                             "cri cri" ;
+    }
+
+    .port {
+        border: none;
+        transform: translateY(0);
+    }
+}
