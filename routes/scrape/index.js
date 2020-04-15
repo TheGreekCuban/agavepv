@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const newsController = require("../../controllers/newsController")
+const News = require("../../controllers/newsController")
 
 
 //Lead routes
 router.route("/")
-    .get(newsController.scrape)
+    .get(News.scrape)
 
 module.exports = router;

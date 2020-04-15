@@ -1,7 +1,7 @@
 const db = require("../../models");
 const mw = require("../../middleware")
 
-// Defining methods for the leadController
+// Defining methods for the newsController
 module.exports = {
   loadArticles: function(req, res) {
     db.Scraper

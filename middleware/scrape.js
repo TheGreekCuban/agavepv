@@ -1,6 +1,5 @@
 const axios = require("axios")
 const cheerio = require("cheerio")
-const leadController = require("../controllers/leadController")
 
 //This is a scraping module where I use the axios package and cheerio.js to scrape articles from tapintonewark.net
 const Scrape = () => {
