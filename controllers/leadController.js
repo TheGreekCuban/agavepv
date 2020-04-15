@@ -32,8 +32,7 @@ module.exports = {
             }  
           })
         })
-      })
-      .catch(err => res.status(422).json(err));
+      }).catch(err => res.status(422).json(err));
   }
   //Need a save method to save the scraped articles, will call this in the middleware.
   //Need to rerout the findAll method to be the one to sort and send the saved data to the front
