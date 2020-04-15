@@ -57,8 +57,8 @@ class Contact extends Component {
 
   render() {
     return (
-      <main id="contact" className="section scrollspy"> 
-          <form>
+      <main id="contact" > 
+          <form className="contactForm section scrollspy">
             <div className="title"><h1>Contact Us</h1></div>
             <Name
               value={this.state.fullName}

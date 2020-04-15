@@ -26,7 +26,7 @@ class Nav extends Component {
             <li><a id="navL" href="#team">Team</a></li>
             <li><a id="navL" href="#criteria">Acquisition Criteria</a></li>
             <li><a id="navL" href="#portfolio">Portfolio</a></li>
-            <li><a id="navL" href="#contact">Contact</a></li>            
+            <li><a id="navL" href=".contactForm">Contact</a></li>            
           </ul>
       </nav>
 
@@ -35,8 +35,8 @@ class Nav extends Component {
         <li><a href="#team">Team</a></li>
         <li><a href="#propertyDescription">Portfolio</a></li>    
         <li><a href="#criteria">Acquisition Criteria</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href=".contactForm">Contact</a></li>
+        <li><a href=".newsTitle">News</a></li>
       </ul> 
     </header>
     );
