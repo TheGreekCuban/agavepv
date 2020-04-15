@@ -24,7 +24,7 @@ module.exports = {
   scrape: function(req, res) {
     mw.Scrape()
       .then(articles => {
-        res.send(articles)
+        res.send(articles.slice(0, 8))
         articles.forEach(element => {
           db.Scraper.findOne({title: element.title}, (error, existingArticle) => {
             if(existingArticle === null) {

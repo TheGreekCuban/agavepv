@@ -1,3 +1,10 @@
 #news {
-    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-areas: "title title title title"
+                         "arts arts arts arts";
+}
+
+h1.newsTitle {
+    text-align: center;
+    grid-area: title;
 }

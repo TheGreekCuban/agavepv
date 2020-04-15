@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./style.css"
 
 export const Article = props => {
     return (
          <div className="cardContainer">
            <div className="cardImage">
-             <img alt={props.article._id} src={props.article.image}/>
+             <img id="cardImage" alt={props.article._id} src={props.article.image}/>
            </div>
            <div className="cardContent">
                <p><strong>{props.article.title}</strong></p>

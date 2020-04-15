@@ -5,9 +5,15 @@
     background-position: center;
     min-width: 300px;
     min-height: 180px;
-    border: 2px solid black;
+    border: 1px solid #608832;
     padding: 5px;
     justify-self: center;
+    border-radius: 5px;
+}
+
+.contactCard:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
 }
 
 .personalContactInfo {
