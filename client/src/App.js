@@ -22,18 +22,18 @@ class App extends Component {
   
   loadArticles = () => {
     API.loadArticles()
-      .then(news => {
-        this.setState({news: news.data})
-
-        if (!this.state.news.length) {
-          this.scrapeArticles() 
-        }
-      })
+      .then(news => this.setState({news: news.data}))
       .catch(error => console.log(error))
   }
 
   componentDidMount() {
     this.loadArticles()
+  }
+
+  componentDidUpdate() {
+    if(this.state.news.length === 0) {
+      this.scrapeArticles()
+    }
   }
 
   render() {

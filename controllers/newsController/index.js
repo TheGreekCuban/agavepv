@@ -20,7 +20,9 @@ module.exports = {
             }  
           })
         })
-      }).catch(err => res.status(422).json(err));
+        res.send(articles.slice(0,8))
+      })
+      .catch(err => res.status(422).json(err));
   }
 };
 
