@@ -4,10 +4,11 @@ import  { ArticleList } from "../../components/ArticleList"
 
 
 const News = props => {
+  
     return (
       <main id="news">
         <h1 id="newsScroll" className="newsTitle section scrollspy">More About Newark, NJ</h1>
-        <ArticleList news={props.news}></ArticleList>
+        <ArticleList scrape={props.scrape} news={props.news}></ArticleList>
       </main>
     );
 }

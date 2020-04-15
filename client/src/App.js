@@ -14,18 +14,9 @@ class App extends Component {
     news: []
   };
 
-  scrapeArticles = () => {
-    API.scrapeArticles()
-      .then(news => this.setState({news: news.data}))
-      .catch(error => console.log(error))
-  }
-  
   loadArticles = () => {
     API.loadArticles()
-      .then(news => {
-        if(news.data.length === 0) {this.scrapeArticles()} 
-        this.setState({news: news.data})
-      })
+      .then(news => this.setState({news: news.data}))
       .catch(error => console.log(error))
   }
 
