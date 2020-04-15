@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Phone(props) {
+export const Phone = props => {
   return (              
   <div className="phoneNumber">
     <div  className="input-field" >

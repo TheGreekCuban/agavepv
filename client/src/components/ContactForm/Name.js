@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Name(props) {
+export const Name = props => {
   return (
     <div className="name">
       <div className="input-field">

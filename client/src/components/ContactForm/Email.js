@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Email(props) {
+export const Email = props => {
   return (
     <div className="email">
       <div  className="input-field">

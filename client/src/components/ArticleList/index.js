@@ -6,7 +6,7 @@ export const ArticleList = props => {
     return (
           <div className="articleList">
           {props.news.length ? props.news.map(article => (
-            <Article key={article._id} article={article}></Article>
+            <Article key={article.title} article={article}></Article>
           )) : (
             <h3>Check back later for updates!</h3>
           )}

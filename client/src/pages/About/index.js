@@ -1,16 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import goulet from "../../images/alexandre.jpeg"
 import vellios from "../../images/alex.jpg"
 import nwrk from "../../images/newark.jpg"
 import "./style.css";
 
 
-class About extends Component {
-  state = {
-    About: []
-  };
-
-  render() {
+const About = () => {
     return (
         <main className="about">
           <h1 className="titleAPV">Agave Property Ventures</h1>
@@ -39,8 +34,7 @@ class About extends Component {
             </p>
           </div>   
         </main>
-    );
-  }
+    )
 }
 
 export default About;

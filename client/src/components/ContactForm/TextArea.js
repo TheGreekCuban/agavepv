@@ -1,6 +1,6 @@
 import React from "react";
 
-export function TextArea(props) {
+export const TextArea = props => {
   return (
     <div className="message">
       <div className="input-field">

@@ -1,14 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 import fourtyTwoThird from "../../images/42third.png"
 
 
-class Portfolio extends Component {
-  state = {
-    Portfolio: []
-  };
-
-  render() {
+const Portfolio = () => {
+ 
     return (
       <main className="portfolio" >
         <div className="port">
@@ -34,7 +30,5 @@ class Portfolio extends Component {
       </main>
     );
   }
-}
 
-export default Portfolio;
-
+  export default Portfolio;

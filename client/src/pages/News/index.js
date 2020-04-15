@@ -3,8 +3,7 @@ import "./style.css";
 import  { ArticleList } from "../../components/ArticleList"
 
 
-function News(props) {
-
+const News = props => {
     return (
       <main id="news" className="section scrollspy">
         <h1>More About Newark, NJ</h1>
