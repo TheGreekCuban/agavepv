@@ -33,7 +33,7 @@ const Scrape = () => {
 
         //Data is an array of objects containing the properties and values from each article.
         return data
-    })
+    }).catch(error => console.log(error))
 }
 
 module.exports = Scrape
