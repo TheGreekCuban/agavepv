@@ -1,19 +1,8 @@
-const db = require("../models");
-const mw = require("../middleware")
+const db = require("../../models");
+const mw = require("../../middleware")
 
 // Defining methods for the leadController
 module.exports = {
-  create: function(req, res) {
-    console.log("LEAD", typeof(req.body))
-    db.Lead
-      .create(req.body)
-      .then(response => res.send(response))
-      .catch(err => res.status(422).json(err));
-  },
-  send: function(req, res) {
-    mw.Send(req.body)
-    res.end()
-  },
   loadArticles: function(req, res) {
     db.Scraper
       .find({})
@@ -33,8 +22,6 @@ module.exports = {
         })
       }).catch(err => res.status(422).json(err));
   }
-  //Need a save method to save the scraped articles, will call this in the middleware.
-  //Need to rerout the findAll method to be the one to sort and send the saved data to the front
 };
 
 /*

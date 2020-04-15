@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const leadController = require("../../controllers/leadController");
+const leadController = require("../../../controllers/leadController");
 
 
 // Matches with "/contact/lead"
