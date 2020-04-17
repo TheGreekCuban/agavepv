@@ -12,5 +12,5 @@
   1. Updated UI
   2. Agave PV Merchandise Store
   3. Accounts, Authentication and Permissions
-  4. Ownership permissions that will interface with the external the UnderwriteR application [link] (https://github.com/TheGreekCuban/writR)
+  4. Ownership permissions that will interface with the external the writR application [link](https://github.com/TheGreekCuban/writR)
   
