@@ -24,9 +24,9 @@ class Nav extends Component {
           <a href="/" id="logo"><img id="logo" src={Logo} alt="logo"/></a>
           <ul id="nav-mobile">
             <li><a id="navL" href="#team">Team</a></li>
-            <li><a id="navL" href="#criteria">Acquisition Criteria</a></li>
-            <li><a id="navL" href="#portfolio">Portfolio</a></li>
-            <li><a id="navL" href="#contactForm">Contact</a></li>            
+            <li><a id="navL" href="#propertyDescription">Portfolio</a></li>
+            <li><a id="navL" href="#contactForm">Contact</a></li> 
+            <li><a id="navL" href="#newsTitle">News</a></li>           
           </ul>
       </nav>
 
@@ -36,7 +36,7 @@ class Nav extends Component {
         <li><a href="#propertyDescription">Portfolio</a></li>    
         <li><a href="#criteria">Acquisition Criteria</a></li>
         <li><a href="#contactForm">Contact</a></li>
-        <li><a href=".newsScroll">News</a></li>
+        <li><a href="#newsTitle">News</a></li>
       </ul> 
     </header>
     );
