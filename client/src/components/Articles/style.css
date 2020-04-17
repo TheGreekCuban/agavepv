@@ -10,6 +10,16 @@
     margin: 20px auto;
 }
 
+.cardContainer:nth-child(2n) {
+    background-color: #608832;
+    color: white;
+}
+
+.cardContainer:nth-child(2n + 1) {
+    background-color: rgb(215, 215, 215);
+    color: white;
+}
+
 .cardContainer:hover {
         transform: translateY(-20px);
         transition: 0.4s ease-out;
@@ -20,4 +30,8 @@
     height: 200px;
     justify-content: center;
     border-radius: 5px;
+}
+
+.cardAction {
+    color: white;
 }

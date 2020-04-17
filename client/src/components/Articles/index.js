@@ -7,11 +7,11 @@ export const Article = props => {
            <div className="cardImage">
              <img id="cardImage" alt={props.article._id} src={props.article.image}/>
            </div>
-           <div className="cardContent">
-               <p><strong>{props.article.title}</strong></p>
+           <div>
+               <p className="cardContent"><strong>{props.article.title}</strong></p>
            </div>
-           <div className="cardAction">
-             <a href={props.article.link}>Read More</a>
+           <div>
+             <a className="cardAction" href={props.article.link}>Read More</a>
            </div>
          </div>       
     )   

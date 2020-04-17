@@ -2,7 +2,7 @@
     text-align: center;
     display: grid;
     grid-template-areas:    "port cri"
-                            "port cri"
+                            "port cri";
 }
 #fourtyTwoThird {
     max-width: 200px;
