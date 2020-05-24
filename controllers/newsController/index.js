@@ -6,7 +6,7 @@ module.exports = {
   loadArticles: function(req, res) {
     db.Scraper
       .find({})
-      .sort('date')
+      .sort({date: -1})
       .then(articles => res.send(articles.slice(0, 8)))
       .catch(err => res.status(422).json(err));
   },
